@@ -16,6 +16,7 @@ All dependencies are provided and are in the bin directory:
 - samtools
 
 Run the "chmod" command to make them executable:
+
         chmod -R 777 bin 
 
 Basic usage
