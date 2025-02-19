@@ -1,10 +1,5 @@
 #Make all binaries executable
-chmod 777 bedtools
-chmod 777 blastdbcmd
-chmod 777 blastn
-chmod 777 esl-shuffle
-chmod 777 makeblastdb
-chmod 777 samtools
+chmod -R 777 bin
 
 #Construct BLASTDB and the index file from FASTA and shuffle, then search for targets.
 perl CRISPRTarget.pl \

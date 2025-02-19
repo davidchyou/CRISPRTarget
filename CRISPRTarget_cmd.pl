@@ -227,7 +227,8 @@ if ($all_db_exist == 0) {
 
 my $script_to_use = "$cd_path/TargetPredict.pl";
 if (lc($algor) eq "swipe") {
-	$script_to_use = "$cd_path/TargetPredictSWIPE.pl";
+	print "SWIPE alignment is not supported in this version, BLASTN is used instead.\n";
+	$script_to_use = "$cd_path/TargetPredict.pl"; #"$cd_path/TargetPredictSWIPE.pl";
 }
 
 my $action = "-attr $outdir/InputData/input_array_spacer_attributes.txt";

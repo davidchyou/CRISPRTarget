@@ -298,7 +298,7 @@ sub create_blast_db_from_user_uploaded_sequence()
 	{
 		my($user_database_file)=@_;
 		my $tmp_db_name=$user_database_file . ".db";
-		system("$cd_path/makeblastdb -in $outdir/$user_database_file -parse_seqids -dbtype nucl -out $outdir/$tmp_db_name >/dev/null");
+		system("$cd_path/bin/makeblastdb -in $outdir/$user_database_file -parse_seqids -dbtype nucl -out $outdir/$tmp_db_name >/dev/null");
 		return($tmp_db_name);
 	}
 

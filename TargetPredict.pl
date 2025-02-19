@@ -327,7 +327,7 @@ if (scalar(keys(%spacer_attr)) > 0) {
 	if (-e $blastn_out_done) {
 		system("cp $blastn_out_done $blast_out");
 	} else {
-		my $cmd = "$cd_path/blastn -query $fasta_in -db \'$db\' -num_threads $cpu -word_size $word_size -evalue $evalue -gapopen $gapopen -gapextend $gapextend -penalty $penalty -reward $reward -task blastn-short -outfmt \'6 sseqid stitle sstart send qseqid qstart qend sstrand length evalue mismatch gaps sseq qseq qlen slen\' ";
+		my $cmd = "$cd_path/bin/blastn -query $fasta_in -db \'$db\' -num_threads $cpu -word_size $word_size -evalue $evalue -gapopen $gapopen -gapextend $gapextend -penalty $penalty -reward $reward -task blastn-short -outfmt \'6 sseqid stitle sstart send qseqid qstart qend sstrand length evalue mismatch gaps sseq qseq qlen slen\' ";
 		if ($use_actual_dbsize > 0) {
 			$cmd .= "-dbsize $dbsize ";
 		}
@@ -461,7 +461,7 @@ for (my $i = 0; $i < scalar(@contents); $i++) {
 	if (exists $extract_lookup{$bed_name}) {
 		$protospacer_seq_with_flanks = $extract_lookup{$bed_name};
 	} else {	
-		my @arr_p_seq = `$cd_path/blastdbcmd -entry '$db_genome_id' -db '$db' -line_length 500 -range '$blastdbcmd_p_start-$blastdbcmd_p_end' -strand '$protospacer_strand' -out - >&1 2>/dev/null`;
+		my @arr_p_seq = `$cd_path/bin/blastdbcmd -entry '$db_genome_id' -db '$db' -line_length 500 -range '$blastdbcmd_p_start-$blastdbcmd_p_end' -strand '$protospacer_strand' -out - >&1 2>/dev/null`;
 		if (scalar(@arr_p_seq) < 2) {
 			#$pm->finish;
 			next;

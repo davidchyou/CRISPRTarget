@@ -192,7 +192,7 @@ for (my $i = 0; $i < scalar(@contents); $i++) {
 }
 close(BED);
 
-system("$cd_path/bedtools getfasta -fi $genome_seq -bed $bed_out -nameOnly -s > $extract_out");
+system("$cd_path/bin/bedtools getfasta -fi $genome_seq -bed $bed_out -nameOnly -s > $extract_out");
 
 sub get_path() {
 	my $dir=shift(@_);

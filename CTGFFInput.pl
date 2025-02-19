@@ -1,3 +1,9 @@
+use Cwd 'getcwd';
+use Cwd 'abs_path';
+
+my $cd_path = abs_path($0); 
+$cd_path = get_path($cd_path);
+
 my $idnumber = "input_array";
 my $gff_in = ""; #"NC_002737.crispr.gff";
 my $outdir = ""; #"out";
@@ -350,6 +356,16 @@ sub stringOfDash {
 sub create_blast_db_from_user_uploaded_sequence() {
 	my($user_database_file)=@_;
 	my $tmp_db_name=$user_database_file . ".db";
-	system("makeblastdb -in $outdir/$user_database_file -parse_seqids -dbtype nucl -out $outdir/$tmp_db_name >/dev/null");
+	system("$cd_path/bin/makeblastdb -in $outdir/$user_database_file -parse_seqids -dbtype nucl -out $outdir/$tmp_db_name >/dev/null");
 	return($tmp_db_name);
 }
+
+sub get_path() {
+	my $dir=shift(@_);
+	my @arr_p1=split('\/',$cd_path);
+	pop(@arr_p1);
+	$dir=join("\/",@arr_p1);
+		
+	return $dir;
+}
+
