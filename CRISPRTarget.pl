@@ -19,6 +19,7 @@ my $db = "";
 my $ctrl_db = "";
 my $user_db = "";
 my $use_user_db = 0;
+my $shuffle_user_db = 1;
 my $min_score = 20;
 my $keep_user_db = 0;
 my $repeat_class_lookup = "NA";
@@ -93,6 +94,10 @@ foreach(@ARGV) {
 	if (@ARGV[$ind] eq '-user_fasta') {
 		$user_db = @ARGV[$ind + 1];
 		$use_user_db = 1;
+	}
+
+ 	if (@ARGV[$ind] eq '-use_default_control_db') {
+		$shuffle_user_db = 0;
 	}
 	
 	if (@ARGV[$ind] eq '-min_score') {
@@ -172,11 +177,13 @@ if ($use_user_db == 0) {
 	my $user_db_path = $rs[0]; 
 	chomp $user_db_path;
 	$db = $user_db_path;
-	
-	@rs = `sh $cd_path/MakeUserShuffledDB.sh $user_db $cd_path/USER_SHUFFLED_DB`;
-	my $user_shuffled_db_path = $rs[0]; 
-	chomp $user_shuffled_db_path;
-	$ctrl_db = $user_shuffled_db_path;
+
+ 	if ($shuffle_user_db > 0 or ($ctrl_db eq "" or ! -e $ctrl_db)) {
+		@rs = `sh $cd_path/MakeUserShuffledDB.sh $user_db $cd_path/USER_SHUFFLED_DB`;
+		my $user_shuffled_db_path = $rs[0]; 
+		chomp $user_shuffled_db_path;
+		$ctrl_db = $user_shuffled_db_path;
+	}
 }
 
 if (-d $outdir) {
