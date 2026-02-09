@@ -3,7 +3,12 @@ CRISPRTarget: command-line version
 
 **Motivation**
 
-We are developing and providing tools to analyse CRISPR arrays in microbial genome sequences. Our tools detect CRISPR arrays ([CRISPRDetect](http://crispr.otago.ac.nz/CRISPRDetect/predict_crispr_array.html)) and then detect targets of CRISPR-array spacers in viral, plasmid and other sequences ([CRISPRTarget](http://crispr.otago.ac.nz/CRISPRTarget/crispr_analysis.html)). The increasing popularity of CRISPRTarget has prompted us to provide a standalone version for download, and a version through the galaxy platform. Matches between genomic spacers and plasmids or viral genomes can be used to predict the microbial host of nucleic acid sequences such as mobile genetic elements and antibiotic resistance genes. Our tool CRISPRHost adapted this approach to predict hosts.
+We are developing and providing tools to analyse CRISPR arrays in microbial genome sequences. Our tools detect CRISPR arrays ([CRISPRDetect](http://crispr.otago.ac.nz/CRISPRDetect/predict_crispr_array.html)) and then detect targets of CRISPR-array spacers in viral, plasmid and other sequences ([CRISPRTarget](http://crispr.otago.ac.nz/CRISPRTarget/crispr_analysis.html)). The increasing popularity of CRISPRTarget has prompted us to provide a standalone version for download, and a version through the galaxy platform.
+
+A repository which contains the version with databases as of 2/2025 is available on Zenodo. (https://zenodo.org/records/14839269).
+
+A Web version available through a galaxy instance will be available in feb 2026.
+
 
 **Dependencies**
 
