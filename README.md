@@ -7,7 +7,7 @@ We are developing and providing tools to analyse CRISPR arrays in microbial geno
 
 A repository which contains the version with databases as of 2/2025 is available on Zenodo. (https://zenodo.org/records/14839269).
 
-A Web version available through a galaxy instance will be available in feb 2026.
+A Web version available through a galaxy instance will be available in February 2026.
 
 
 **Dependencies**
