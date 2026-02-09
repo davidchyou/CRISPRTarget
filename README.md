@@ -9,6 +9,8 @@ A repository which contains the version with databases as of 2/2025 is available
 
 A Web version available through a galaxy instance will be available in February 2026.
 
+A maunscript is in preparation but the orginal CRISPRTarget paper can be cited in the iterim (https://www.tandfonline.com/doi/full/10.4161/rna.24046)
+
 
 **Dependencies**
 
