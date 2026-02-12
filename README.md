@@ -63,7 +63,7 @@ For technical reasons, the Javascript user-interface in the header as seen in th
 
 Specific databases
 ------------------
-Formatted versions of the plasmid and phage databases are available with this software at zenodo: https://zenodo.org/records/14839269.
+Formatted versions of the plasmid and phage databases are available with this software at zenodo: (https://doi.org/10.5281/zenodo.14839268)
 
 Plasmid (plasmid.fa): Download RefSeq Plasmid (https://ftp.ncbi.nlm.nih.gov/refseq/release/plasmid/plasmid.*.genomic.fna.gz), combine into one fasta file
 Phage (phage.fa): Download Genbank Phage (https://ftp.ncbi.nlm.nih.gov/genbank/) convert to a fasta file
