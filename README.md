@@ -62,6 +62,9 @@ The application will report targets found in the BLASTDB in the following ways:
 For technical reasons, the Javascript user-interface in the header as seen in the web version of the HTML output is not provided.
 
 Specific databases
+------------------
+Formatted versions of the plasmid and phage databases are available with this software at zenodo: https://zenodo.org/records/14839269.
+
 Plasmid (plasmid.fa): Download RefSeq Plasmid (https://ftp.ncbi.nlm.nih.gov/refseq/release/plasmid/plasmid.*.genomic.fna.gz), combine into one fasta file
 Phage (phage.fa): Download Genbank Phage (https://ftp.ncbi.nlm.nih.gov/genbank/) convert to a fasta file
 IMGVR (IMGVR.fna) Download IMGVR5/MetaVR file IMGVR5_UViG.fna 
