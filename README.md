@@ -5,7 +5,7 @@ CRISPRTarget: command-line version
 
 We are developing and providing tools to analyse CRISPR arrays in microbial genome sequences. Our tools detect CRISPR arrays ([CRISPRDetect](http://crispr.otago.ac.nz/CRISPRDetect/predict_crispr_array.html)) and then detect targets of CRISPR-array spacers in viral, plasmid and other sequences ([CRISPRTarget](http://crispr.otago.ac.nz/CRISPRTarget/crispr_analysis.html)). The increasing popularity of CRISPRTarget has prompted us to provide a standalone version for download, and a version through the galaxy platform.
 
-A repository which contains the version with databases as of 2/2025 is available on Zenodo. (https://zenodo.org/records/14839269).
+A repository which contains the version with several databases as of 2/2026 is available on Zenodo.
 
 A Web version available through a galaxy instance will be available in February 2026.
 
@@ -76,4 +76,4 @@ Further down the track we will provide a mechanism to interface the command-line
 
 This will allow a better way to search for PAM, as different types of CRISPR arrays have their own set of PAMs. By default, we search for PAM under the constraint that super-types of CRISPR arrays must match, and if type information is unavailable, PAM will not be searched.
 
-In the current release, to enable PAM search without type information, the command-line argument "-pam_search_all" can be used to search for PAM independent of CRISPR arrays types.
+In the current release, to enable PAM search without type information, the command-line argument "-pam_search_all" can be used to search for all PAM independent of CRISPR arrays types.
