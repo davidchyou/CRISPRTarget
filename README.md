@@ -5,11 +5,11 @@ CRISPRTarget: command-line version
 
 We are developing and providing tools to analyse CRISPR arrays in microbial genome sequences. Our tools detect CRISPR arrays ([CRISPRDetect](http://crispr.otago.ac.nz/CRISPRDetect/predict_crispr_array.html)) and then detect targets of CRISPR-array spacers in viral, plasmid and other sequences ([CRISPRTarget](http://crispr.otago.ac.nz/CRISPRTarget/crispr_analysis.html)). The increasing popularity of CRISPRTarget has prompted us to provide a standalone version for download, and a version through the galaxy platform.
 
-A repository which contains the version with several databases as of 2/2026 is available on Zenodo.
+A repository which contains the version with several databases as of 8/2026 is available on Zenodo.
 
-A Web version available through a galaxy instance will be available in February 2026.
+A Web version available through a galaxy instance should be available in late 2026.
 
-A maunscript is in preparation, but the orginal CRISPRTarget paper (Biswas et al 2013) can be cited in the interim (https://www.tandfonline.com/doi/full/10.4161/rna.24046)
+A manuscript is in preparation, but the orginal CRISPRTarget paper (Biswas et al 2013) can be cited in the interim (https://www.tandfonline.com/doi/full/10.4161/rna.24046)
 
 
 **Dependencies**
@@ -68,6 +68,7 @@ Formatted versions of the plasmid and phage databases are available with this so
 To use the latest version:
 Plasmid (plasmid.fa): Download RefSeq Plasmid (https://ftp.ncbi.nlm.nih.gov/refseq/release/plasmid/plasmid.*.genomic.fna.gz), combine into one fasta file
 Phage (phage.fa) and use makeblastdb to make a blast database. Download Genbank Phage in gbk format (https://ftp.ncbi.nlm.nih.gov/genbank/) convert to a fasta file.
+
 For IMGVR, download IMGVR5/MetaVR file IMGVR5_UViG.fna 
 
 Future work
