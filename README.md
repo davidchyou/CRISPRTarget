@@ -63,13 +63,15 @@ For technical reasons, the Javascript user-interface in the header as seen in th
 
 Specific databases
 ------------------
-Formatted versions of the plasmid and phage databases are available with this software at zenodo: (https://doi.org/10.5281/zenodo.14839268)
+Fasta versions of the plasmid and phage databases are available with this software at zenodo: (https://doi.org/10.5281/zenodo.14839268)
 
-To use the latest version:
+To use a later version of plasmid or phage (usdated every 2 months by NCBI):
 Plasmid (plasmid.fa): Download RefSeq Plasmid (https://ftp.ncbi.nlm.nih.gov/refseq/release/plasmid/plasmid.*.genomic.fna.gz), combine into one fasta file
-Phage (phage.fa) and use makeblastdb to make a blast database. Download Genbank Phage in gbk format (https://ftp.ncbi.nlm.nih.gov/genbank/) convert to a fasta file.
+Phage (phage.fa). Download Genbank Phage in gbk format (https://ftp.ncbi.nlm.nih.gov/genbank/) convert to a fasta file.
 
 For IMGVR, download IMGVR5/MetaVR file IMGVR5_UViG.fna 
+
+For use with CRISPRTarget they must be formated with makeblastdb.
 
 Future work
 -----------
