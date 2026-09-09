@@ -69,12 +69,12 @@ To use a later version of plasmid or phage (usdated every 2 months by NCBI):
 Plasmid (plasmid.fa): Download RefSeq Plasmid (https://ftp.ncbi.nlm.nih.gov/refseq/release/plasmid/plasmid.*.genomic.fna.gz), combine into one fasta file
 Phage (phage.fa). Download Genbank Phage in gbk format (https://ftp.ncbi.nlm.nih.gov/genbank/) convert to a fasta file.
 
-For IMGVR, download and uncompress IMGVR5/MetaVR file IMGVR5_UViG.fna. These are very large 80Gb compressed, uncompressed with the blastdb requires ~400Gb of disk.
+For IMGVR, download and uncompress IMGVR5/MetaVR file IMGVR5_UViG.fna. These are very large 71Gb compressed, 250 Gb uncompressed with the blastdb requires ~500Gb of disk.
 wget https://portal.nersc.gov/cfs/m342/METAVR/METAVR.fna.bgz
 mv METAVR.fna.bgz  METAVR.fna.gz
 gunzip METAVR.fna.gz
 
-For use with CRISPRTarget they must be formatted with makeblastdb in blast database version 4
+For use with CRISPRTarget fasta files must be reformatted with makeblastdb in blast database version 4
 e.g. makeblastdb -in phage.fa -out phage.fa -dbtype nucl -blastdb_version 4
 
 Future work
