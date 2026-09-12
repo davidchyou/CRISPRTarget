@@ -51,6 +51,7 @@ A user generated a CRISPRDetect-formatted GFF of CRISPR arrays, and the user als
 The shuffled BLASTB and index file need not to be derived from the same BLASTDB to be queried. Because the shuffled BLASTB and index file serve as the background for p-value calculation, it has to be big and should cover a diverse range of organism and nucleotide composition.
 
 **Common options**
+
 -pam_search_all         Search for all PAM (see Biswas et al 2013 for list)
 -database size N        Specifies the database size for statistical analysis, eg. at 100000000. Then P values are comparable across databases of different sizes.
 -keep_user_db            Keeps user DB for later use (important for larger databases)
