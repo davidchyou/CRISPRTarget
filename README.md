@@ -53,9 +53,13 @@ The shuffled BLASTB and index file need not to be derived from the same BLASTDB 
 **Common options**
 
 -pam_search_all         Search for all PAM (see Biswas et al 2013 for list)
+
 -database size N        Specifies the database size for statistical analysis, eg. at 100000000. Then P values are comparable across databases of different sizes.
+
 -keep_user_db            Keeps user DB for later use (important for larger databases)
+
 -ctrl_db                 Users the specified control DB
+
 -use_default_control_db          Uses the standard shuffled control DB (-ctrl_db USER_SHUFFLED_DB/vhdb_selected.fna)
 
 Output
