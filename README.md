@@ -9,7 +9,7 @@ A repository which contains the version with several databases as of 8/2026 is a
 
 A Web version available through a galaxy instance should be available in late 2026.
 
-A manuscript is in preparation, but the orginal CRISPRTarget paper (Biswas et al 2013) can be cited in the interim (https://www.tandfonline.com/doi/full/10.4161/rna.24046)
+A manuscript is in preparation, but the original CRISPRTarget paper (Biswas et al 2013) can be cited in the interim (https://www.tandfonline.com/doi/full/10.4161/rna.24046)
 
 
 **Dependencies**
@@ -28,28 +28,34 @@ Run the "chmod" command to make them executable:
 
 Basic usage
 -----------
-**Use case 1**
-A user generated a CRISPRDetect-formatted GFF file of CRISPR arrays using CRISPRDetect, and a downloaded set genomic sequences to be used as DB (e.g. Genbank Phage or RefSeq Plasmid or IMGVR5, see instructions for specific databases). The user can call this command to build a BLASTDB and generate an index file for the genomic sequences. Then dinucleotide-shuffle the genomic sequences, build another BLASTDB and compute another index file for the shuffled sequences. Then search for the CRISPR-spacer target and compute P-value using the shuffled BLASTDB. The user can then save the genomic and the shuffled BLASTDBs and index files for later use.
+Basic setup. Uncompress the CRISPRTarget repository, place your target databases in fasta format a subdirectory named DB, and your space file  in the top level directory. 
 
-        perl CRISPRTarget.pl -gff sample_crispr_gff/PSA.crispr.gff -user_fasta DB/phage.fa -evalue 0.1 -out phage_out -pam_search_all
+**Use case 1**
+A user generated a CRISPRDetect-formatted GFF file of CRISPR arrays using CRISPRDetect, and a downloaded set genomic sequences to be used as DB (e.g. Genbank Phage or RefSeq Plasmid or IMGVR5, see instructions for specific databases below). The user can call this command to build a BLASTDB and generate an index file for the genomic sequences (placed in USER_DB). Then dinucleotide-shuffle the genomic sequences, build another BLASTDB and compute another index file for the shuffled sequences. Then search for the CRISPR-spacer target and compute P-value using the shuffled BLASTDB. The user can then save the genomic and the shuffled BLASTDBs and index files for later use.
+
+
+        perl CRISPRTarget.pl -gff sample_crispr_gff/PSA.crispr.gff -user_fasta DB/phage.fa -keep_user_db  -evalue 0.1 -out phage_out -pam_search_all
         
 **Use case 2**
 
 A user generated a CRISPRDetect-formatted GFF file of CRISPR arrays using CRISPRDetect, and a set of genomic sequences to be used as DB. The user can call this command to build a BLASTDB and generate an index file for the genomic sequences. Then dinucleotide-shuffle the genomic sequences, build another BLASTDB and compute another index file for the shuffle sequences. Then search for the CRISPR-spacer target and compute P-value using the shuffled BLASTDB. The user can then save the genomic and the shuffled BLASTDBs and index files for later use.
 
-        perl CRISPRTarget.pl -gff sample_crispr_gff/PSA.crispr.gff -user_fasta sample_db/vhdb_selected.fna -dbsize 100000000 -evalue 1 -out test_out -pam_search_all
+        perl CRISPRTarget.pl -gff sample_crispr_gff/PSA.crispr.gff -user_fasta sample_db/vhdb_selected.fna -keep_user_db  -dbsize 100000000 -evalue 1 -out test_out -pam_search_all
 
 **Use case 3**
 
 A user generated a CRISPRDetect-formatted GFF of CRISPR arrays, and the user also have the BLASTDB and the index file computed previous call, as well as the shuffled version of these. The user can search for the CRISPR-spacer target and compute P-value directly with this command. In this case, the user will need BLASTDBs and the index files from the both the genomes and the shuffled sequences.
 
-        perl CRISPRTarget.pl -gff sample_crispr_gff/PSA.crispr.gff -db USER_DB/vhdb_selected.fna -ctrl_db USER_SHUFFLED_DB/vhdb_selected.fna -dbsize 100000000 -evalue 1 -out test_out_2 -pam_search_all
+        perl CRISPRTarget.pl -gff sample_crispr_gff/PSA.crispr.gff -db USER_DB/vhdb_selected.fna -keep_user_db  -ctrl_db USER_SHUFFLED_DB/vhdb_selected.fna -dbsize 100000000 -evalue 1 -out test_out_2 -pam_search_all
 
 The shuffled BLASTB and index file need not to be derived from the same BLASTDB to be queried. Because the shuffled BLASTB and index file serve as the background for p-value calculation, it has to be big and should cover a diverse range of organism and nucleotide composition.
 
 Common options
 -pam_search_all         Search for all PAM (see Biswas et al 2013 for list)
 -database size N        Specifies the database size for statistical analysis, eg. at 100000000. Then P values are comparable across databases of different sizes.
+-keep_user_db            Keeps user DB for later use (important for larger databases)
+-ctrl_db                 Users the specified control DB
+-use_default_control_db          Uses the standard shuffled control DB (-ctrl_db USER_SHUFFLED_DB/vhdb_selected.fna)
 
 Output
 ------
@@ -63,18 +69,24 @@ For technical reasons, the Javascript user-interface in the header as seen in th
 
 Specific databases
 ------------------
-Fasta versions of the plasmid and phage databases are available with this software at zenodo: (https://doi.org/10.5281/zenodo.14839268)
+The deafult set on the web version of CRISPRTarget (2/2026) was Genbank phage, RefSeq plasmid and IMGVR v4. IMGVR has been superseded by MetaVR.
 
-To use a later version of plasmid or phage (usdated every 2 months by NCBI):
+For CRISPRTarget, fasta versions of the plasmid and phage databases are available at zenodo: (https://doi.org/10.5281/zenodo.14839268). These can be obtained with wget (e.g. v4 'wget https://zenodo.org/records/21869551/files/phage.fa.zip')
+
+To use a later version of plasmid or phage (updated every 2 months by NCBI):
+
 Plasmid (plasmid.fa): Download RefSeq Plasmid (https://ftp.ncbi.nlm.nih.gov/refseq/release/plasmid/plasmid.*.genomic.fna.gz), combine into one fasta file
 Phage (phage.fa). Download Genbank Phage in gbk format (https://ftp.ncbi.nlm.nih.gov/genbank/) convert to a fasta file.
 
-For IMGVR, download and uncompress IMGVR5/MetaVR file IMGVR5_UViG.fna. These are very large 71Gb compressed, 250 Gb uncompressed with the blastdb requires ~500Gb of disk.
+For the older IMGVR, download and uncompress IMGVR5 file IMGVR5_UViG.fna. (https://genome.jgi.doe.gov/portal/IMG_VR/IMG_VR.home.html)
+
+For MetaVR, it can be obtained directly by wget. However, these are very large 71Gb compressed, 250 Gb uncompressed with the blastdb requires ~500Gb of disk.
+
 wget https://portal.nersc.gov/cfs/m342/METAVR/METAVR.fna.bgz
 mv METAVR.fna.bgz  METAVR.fna.gz
 gunzip METAVR.fna.gz
 
-For use with CRISPRTarget fasta files must be reformatted with makeblastdb in blast database version 4
+Note: Makeblastdb. This is done automatically by CRISPRTarget but for use with CRISPRTarget fasta files must be reformatted with makeblastdb in blast database version 4
 e.g. makeblastdb -in phage.fa -out phage.fa -dbtype nucl -blastdb_version 4
 
 Future work
