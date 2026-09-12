@@ -28,7 +28,7 @@ Run the "chmod" command to make them executable:
 
 Basic usage
 -----------
-Basic setup. Uncompress the CRISPRTarget repository, place your target databases in fasta format a subdirectory named DB, and your space file  in the top level directory. 
+Initial setup. Uncompress the CRISPRTarget repository, place your target databases in fasta format a subdirectory named DB, and your spacer file in the top level directory, or subdirectory (e.g sample_crispr_gff). 
 
 **Use case 1**
 A user generated a CRISPRDetect-formatted GFF file of CRISPR arrays using CRISPRDetect, and a downloaded set genomic sequences to be used as DB (e.g. Genbank Phage or RefSeq Plasmid or IMGVR5, see instructions for specific databases below). The user can call this command to build a BLASTDB and generate an index file for the genomic sequences (placed in USER_DB). Then dinucleotide-shuffle the genomic sequences, build another BLASTDB and compute another index file for the shuffled sequences. Then search for the CRISPR-spacer target and compute P-value using the shuffled BLASTDB. The user can then save the genomic and the shuffled BLASTDBs and index files for later use.
