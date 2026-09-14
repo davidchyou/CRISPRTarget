@@ -146,7 +146,7 @@ if ($use_user_db == 0) {
 		die "BLASTDB not specified.";
 	}
 	if (! -e $db) {
-		die "BLASTDB $db dose not exist.";
+		die "BLASTDB $db does not exist.";
 	}
 	if (! -e "$db.fai") {
 		die "BLASTDB need to come with a Bedtools-compatible index file (*.fai).";
@@ -155,7 +155,7 @@ if ($use_user_db == 0) {
 		die "Shuffled BLASTDB not specified.";
 	}
 	if (! -e $ctrl_db) {
-		die "Shuffled BLASTDB $ctrl_db dose not exist.";
+		die "Shuffled BLASTDB $ctrl_db does not exist.";
 	}
 	if (! -e "$ctrl_db.fai") {
 		die "Shuffled BLASTDB need to come with a Bedtools-compatible index file (*.fai).";
@@ -165,13 +165,13 @@ if ($use_user_db == 0) {
 		die "User FASTA not specified.";
 	}
 	if (! -e $user_db) {
-		die "User FASTA $user_db dose not exist.";
+		die "User FASTA $user_db does not exist.";
 	}
 
-	if ($keep_user_db == 0) {
-		system("rm -rf $cd_path/USER_DB");
-		system("rm -rf $cd_path/USER_SHUFFLED_DB");
-	}
+	# if ($keep_user_db == 0) {
+	#	system("rm -rf $cd_path/USER_DB");
+	#	system("rm -rf $cd_path/USER_SHUFFLED_DB");
+	# }
 
 	@rs = `sh $cd_path/MakeUserDB.sh $user_db $cd_path/USER_DB`;
 	my $user_db_path = $rs[0]; 
