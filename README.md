@@ -30,23 +30,15 @@ Basic usage
 -----------
 Initial setup. Uncompress the CRISPRTarget repository, place your target databases in fasta format a subdirectory named DB, and your spacer file in the top level directory, or subdirectory (e.g sample_crispr_gff). 
 
+ csh run_setup_db.sh
+
+ This may take several hours as the download to DB from zenodo of the phage and plasmid files is slow and use ~40Gb of disk.
+
 **Use case 1**
-A user generated a CRISPRDetect-formatted GFF file of CRISPR arrays using CRISPRDetect, and a downloaded set genomic sequences to be used as DB (e.g. Genbank Phage or RefSeq Plasmid or IMGVR5, see instructions for specific databases below). The user can call this command to build a BLASTDB and generate an index file for the genomic sequences (placed in USER_DB). Then dinucleotide-shuffle the genomic sequences, build another BLASTDB and compute another index file for the shuffled sequences. Then search for the CRISPR-spacer target and compute P-value using the shuffled BLASTDB. The user can then save the genomic and the shuffled BLASTDBs and index files for later use.
+A user generated a CRISPRDetect-formatted GFF file of CRISPR arrays using CRISPRDetect (e.g.PSA.crispr.gff), and a downloaded set genomic sequences to be used as DB (e.g. Genbank Phage or RefSeq Plasmid or IMGVR5, see instructions for specific databases below). CRISPRTarget will search for the CRISPR-spacer target and compute P-value using the shuffled BLASTDB. The user can then save the genomic and the shuffled BLASTDBs and index files for later use.
 
+        perl CRISPRTarget.pl -gff sample_crispr_gff/PSA.crispr.gff -user_fasta DB/phage.fa -ctrl_db USER_SHUFFLE_DB/phage.db -keep_user_db -evalue 0.1 -out phage_out -pam_search_all
 
-        perl CRISPRTarget.pl -gff sample_crispr_gff/PSA.crispr.gff -user_fasta DB/phage.fa -keep_user_db  -evalue 0.1 -out phage_out -pam_search_all
-        
-**Use case 2**
-
-A user generated a CRISPRDetect-formatted GFF file of CRISPR arrays using CRISPRDetect, and a set of genomic sequences to be used as DB. The user can call this command to build a BLASTDB and generate an index file for the genomic sequences. Then dinucleotide-shuffle the genomic sequences, build another BLASTDB and compute another index file for the shuffle sequences. Then search for the CRISPR-spacer target and compute P-value using the shuffled BLASTDB. The user can then save the genomic and the shuffled BLASTDBs and index files for later use.
-
-        perl CRISPRTarget.pl -gff sample_crispr_gff/PSA.crispr.gff -user_fasta sample_db/vhdb_selected.fna -keep_user_db  -dbsize 100000000 -evalue 1 -out test_out -pam_search_all
-
-**Use case 3**
-
-A user generated a CRISPRDetect-formatted GFF of CRISPR arrays, and the user also have the BLASTDB and the index file computed previous call, as well as the shuffled version of these. The user can search for the CRISPR-spacer target and compute P-value directly with this command. In this case, the user will need BLASTDBs and the index files from the both the genomes and the shuffled sequences.
-
-        perl CRISPRTarget.pl -gff sample_crispr_gff/PSA.crispr.gff -db USER_DB/vhdb_selected.fna -keep_user_db  -ctrl_db USER_SHUFFLED_DB/vhdb_selected.fna -dbsize 100000000 -evalue 1 -out test_out_2 -pam_search_all
 
 The shuffled BLASTB and index file need not to be derived from the same BLASTDB to be queried. Because the shuffled BLASTB and index file serve as the background for p-value calculation, it has to be big and should cover a diverse range of organism and nucleotide composition.
 
@@ -58,9 +50,9 @@ The shuffled BLASTB and index file need not to be derived from the same BLASTDB 
 
 -keep_user_db            Keeps user DB for later use (important for larger databases)
 
--ctrl_db                 Users the specified control DB
+-ctrl_db                 Users the specified control DB e.g.USER_SHUFFLE_DB/phage.fa
 
--use_default_control_db          Uses the standard shuffled control DB (-ctrl_db USER_SHUFFLED_DB/vhdb_selected.fna)
+-use_default_control_db          Uses the standard shuffled control DB (-ctrl_db USER_SHUFFLED_DB/phage.fa)
 
 Output
 ------
