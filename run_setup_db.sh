@@ -5,8 +5,9 @@ chmod -R 777 bin
 mkdir DB
 cd DB
 wget https://zenodo.org/records/21869551/files/phage.fa.zip
+unzip phage.fa.zip &
 wget https://zenodo.org/records/21869551/files/plasmid.fa.zip
-unzip *.zip
+unzip plasmid.fa.zip &
 cd ../
 
 #Construct BLASTDB and the index file from FASTA and shuffle, then search for targets.
@@ -15,7 +16,7 @@ perl CRISPRTarget.pl \
 -user_fasta DB/phage.fa \
 -dbsize 100000000 \
 -evalue 1 \
--out test_out \
+-out test_out_1 \
 -pam_search_all
 -make_user_db
 
@@ -23,7 +24,7 @@ perl CRISPRTarget.pl \
 perl CRISPRTarget.pl \
 -gff sample_crispr_gff/PSA.crispr.gff \
 -db USER_DB/vhdb_selected.fna \
--ctrl_db USER_SHUFFLED_DB/vhdb_selected.fna \
+-ctrl_db USER_SHUFFLED_DB/phage.fa \
 -dbsize 100000000 \
 -evalue 1 \
 -out test_out_2 \
