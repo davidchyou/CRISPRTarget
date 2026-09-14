@@ -83,8 +83,6 @@ wget https://portal.nersc.gov/cfs/m342/METAVR/METAVR.fna.bgz
 mv METAVR.fna.bgz  METAVR.fna.gz
 gunzip METAVR.fna.gz
 
-Note: Makeblastdb. This is done automatically by CRISPRTarget but for use with CRISPRTarget fasta files must be reformatted with makeblastdb in blast database version 4
-e.g. makeblastdb -in phage.fa -out phage.fa -dbtype nucl -blastdb_version 4
 
 Future work
 -----------
