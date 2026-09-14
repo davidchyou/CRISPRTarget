@@ -13,8 +13,7 @@ cd ../
 #Construct BLASTDB and the index file from FASTA and shuffle, then search for targets.
 perl CRISPRTarget.pl \
 -gff sample_crispr_gff/PSA.crispr.gff \
--db USER_DB/vhdb_selected.fna \
--ctrl_db USER_SHUFFLED_DB/vhdb_selected.fna \
+-db sample_db/vhdb_selected.fna \
 -dbsize 100000000 \
 -evalue 1 \
 -out test_out_vhdb \
@@ -24,6 +23,7 @@ perl CRISPRTarget.pl \
 perl CRISPRTarget.pl \
 -gff sample_crispr_gff/PSA.crispr.gff \
 -user_fasta DB/phage.fa \
+-ctrl_db USER_SHUFFLED_DB/vhdb_selected.fna \
 -dbsize 100000000 \
 -evalue 1 \
 -out test_out_phage \
