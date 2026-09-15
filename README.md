@@ -46,13 +46,17 @@ The shuffled BLASTB and index file need not to be derived from the same BLASTDB 
 
 -pam_search_all         Search for all PAM (see Biswas et al 2013 for list)
 
+-user_fasta Specifies a user fasta file for first use and creating and database, (e.g. --make_user_db -user_fasta DB/plasmid.fa)
+
+-db uses a preexisting database and index
+
 -database size N        Specifies the database size for statistical analysis, eg. at 100000000. Then P values are comparable across databases of different sizes.
 
 -keep_user_db            Keeps user DB for later use (important for larger databases)
 
--ctrl_db                 Users the specified control DB e.g.USER_SHUFFLE_DB/phage.fa
+-ctrl_db                 Uses the specified control DB (e.g. -ctrl_db USER_SHUFFLE_DB/phage.fa)
 
--use_default_control_db          Uses the standard shuffled control DB (-ctrl_db USER_SHUFFLED_DB/phage.fa)
+-use_default_control_db          Uses the standard shuffled control DB 
 
 Output
 ------
