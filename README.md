@@ -70,18 +70,18 @@ For technical reasons, the Javascript user-interface in the header as seen in th
 
 Specific databases
 ------------------
-The deafult set on the web version of CRISPRTarget (2/2026) was Genbank phage, RefSeq plasmid and IMGVR v4. IMGVR has been superseded by MetaVR.
+The default set on the web version of CRISPRTarget (2/2026) was Genbank phage, RefSeq plasmid and IMGVR v4. IMGVR has been superseded by MetaVR.
 
-For CRISPRTarget, fasta versions of the plasmid and phage databases are available at zenodo: (https://doi.org/10.5281/zenodo.14839268). These can be obtained with wget (e.g. v4 'wget https://zenodo.org/records/21869551/files/phage.fa.zip')
+For CRISPRTarget, fasta versions of the plasmid and phage databases are available at zenodo: (https://doi.org/10.5281/zenodo.14839268). These can be obtained with wget (e.g. 'wget https://zenodo.org/records/nnnnn/files/phage.fa.zip') and will be reformatted 
 
-To use a later version of plasmid or phage (updated every 2 months by NCBI):
+To use a later version of plasmid or phage (each updated every 2 months by NCBI):
 
-Plasmid (plasmid.fa): Download RefSeq Plasmid (https://ftp.ncbi.nlm.nih.gov/refseq/release/plasmid/plasmid.*.genomic.fna.gz), combine into one fasta file
-Phage (phage.fa). Download Genbank Phage in gbk format (https://ftp.ncbi.nlm.nih.gov/genbank/) convert to a fasta file.
+Plasmid (plasmid.fa): Download RefSeq Plasmid (https://ftp.ncbi.nlm.nih.gov/refseq/release/plasmid/plasmid.*.genomic.fna.gz), cat into one fasta file
+Phage (phage.fa). Download Genbank Phage in gbk format (https://ftp.ncbi.nlm.nih.gov/genbank/) cat and convert to a fasta file.
 
 For the older IMGVR, download and uncompress IMGVR5 file IMGVR5_UViG.fna. (https://genome.jgi.doe.gov/portal/IMG_VR/IMG_VR.home.html)
 
-For MetaVR, it can be obtained directly by wget. However, these are very large 71Gb compressed, 250 Gb uncompressed with the blastdb requires ~500Gb of disk.
+For MetaVR, it can be obtained directly by wget. However, these are very large 71Gb compressed, 250 Gb uncompressed with the blast DB requires ~500Gb of disk.
 
 wget https://portal.nersc.gov/cfs/m342/METAVR/METAVR.fna.bgz
 mv METAVR.fna.bgz  METAVR.fna.gz
