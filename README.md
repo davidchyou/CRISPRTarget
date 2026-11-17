@@ -37,10 +37,10 @@ Initial setup. Uncompress the CRISPRTarget repository, place your target databas
 **Use case 1**
 A user generated a CRISPRDetect-formatted GFF file of CRISPR arrays using CRISPRDetect (e.g.PSA.crispr.gff), and a downloaded set genomic sequences to be used as DB (e.g. Genbank Phage or RefSeq Plasmid or IMGVR5, see instructions for specific databases below). CRISPRTarget will search for the CRISPR-spacer target and compute P-value using the shuffled BLASTDB. The user can then save the genomic and the shuffled BLASTDBs and index files for later use.
 
-        perl CRISPRTarget.pl -gff sample_crispr_gff/PSA.crispr.gff -user_fasta DB/phage.fa -ctrl_db USER_SHUFFLE_DB/phage.db -keep_user_db -evalue 0.1 -out phage_out -pam_search_all
+        perl CRISPRTarget.pl -gff sample_crispr_gff/PSA.crispr.gff -user_fasta DB/phage.fa -ctrl_db USER_SHUFFLE_DB/phage.fa -keep_user_db -evalue 0.1 -out phage_out -pam_search_all
 
 
-The shuffled BLASTB and index file need not to be derived from the same BLASTDB to be queried. Because the shuffled BLASTB and index file serve as the background for p-value calculation, it has to be big and should cover a diverse range of organism and nucleotide composition.
+The shuffled BLASTB and index file need not to be derived from the same BLASTDB to be queried. Because the shuffled BLASTB and index file serve as the background for p-value calculation, it has to be large and should cover a diverse range of organism and nucleotide composition.
 
 **Common options**
 
