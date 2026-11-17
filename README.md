@@ -76,17 +76,18 @@ For CRISPRTarget, fasta versions of the plasmid and phage databases are availabl
 
 To use a later version of plasmid or phage (each updated every 2 months by NCBI):
 
-Plasmid (plasmid.fa): Download RefSeq Plasmid (https://ftp.ncbi.nlm.nih.gov/refseq/release/plasmid/plasmid.*.genomic.fna.gz), cat into one fasta file
-Phage (phage.fa). Download Genbank Phage in gbk format (https://ftp.ncbi.nlm.nih.gov/genbank/) cat and convert to a fasta file.
+**Plasmid** (plasmid.fa): Download RefSeq Plasmid (https://ftp.ncbi.nlm.nih.gov/refseq/release/plasmid/plasmid.*.genomic.fna.gz), cat into one fasta file
+**Phage** (phage.fa). Download Genbank Phage in gbk format (https://ftp.ncbi.nlm.nih.gov/genbank/) cat and convert to a fasta file.
 
-For the older IMGVR, download and uncompress IMGVR5 file IMGVR5_UViG.fna. (https://genome.jgi.doe.gov/portal/IMG_VR/IMG_VR.home.html)
+For the older IMGVR, download and uncompress the IMGVR5 file IMGVR5_UViG.fna. (https://genome.jgi.doe.gov/portal/IMG_VR/IMG_VR.home.html)
 
-For MetaVR, it can be obtained directly by wget. However, these are very large 71Gb compressed, 250 Gb uncompressed with the blast DB requires ~500Gb of disk.
+**MetaVR**, it can be obtained directly by wget. However, these are very large 71Gb compressed, 250 Gb uncompressed with the blast DB requires ~500Gb of disk.
 
 wget https://portal.nersc.gov/cfs/m342/METAVR/METAVR.fna.bgz
 mv METAVR.fna.bgz  METAVR.fna.gz
 gunzip METAVR.fna.gz
 
+Alternative download and more information on MetaVR (https://www.meta-virome.org/Downloads)
 
 Future work
 -----------
