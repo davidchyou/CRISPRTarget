@@ -12,6 +12,7 @@ cd ../
 cd sample_db
 wget https://zenodo.org/records/21869551/files/all_vhdb_full.fna.zip
 unzip all_vhdb_full.fna.zip
+cd ../
 
 #Construct BLASTDB and the index file from a small FASTA (-user_fasta) and shuffle, then search for targets.
 perl CRISPRTarget.pl \
