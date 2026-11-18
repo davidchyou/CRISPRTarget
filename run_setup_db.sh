@@ -1,7 +1,7 @@
 #Make all binaries executable
 chmod -R 777 bin
 
-#Download plage and plasmid datbases
+#Download phage and plasmid datbases (this is for the v5 11/2026) need to updated for later versions.
 mkdir DB
 cd DB
 wget https://zenodo.org/records/24148305/files/phage.fa.zip
