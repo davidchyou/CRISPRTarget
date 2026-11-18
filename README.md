@@ -3,9 +3,9 @@ CRISPRTarget: command-line version
 
 **Motivation**
 
-We are developing and providing tools to analyse CRISPR arrays in microbial genome sequences. Our tools detect CRISPR arrays ([CRISPRDetect](http://crispr.otago.ac.nz/CRISPRDetect/predict_crispr_array.html)) and then detect targets of CRISPR-array spacers in viral, plasmid and other sequences ([CRISPRTarget](http://crispr.otago.ac.nz/CRISPRTarget/crispr_analysis.html)). The increasing popularity of CRISPRTarget has prompted us to provide a standalone version for download, and a version through the galaxy platform.
+We are developing and providing tools to analyse CRISPR arrays in microbial genome sequences. Our tools detect CRISPR arrays (CRISPRDetect) and then detect targets of CRISPR-array spacers in viral, plasmid and other sequences (CRISPRTarget). The increasing popularity of CRISPRTarget has prompted us to provide a standalone version for download, and a version through the galaxy platform.
 
-A repository which contains the version with several databases as of 8/2026 is available on Zenodo.
+A repository which contains a version with several databases is available on Zenodo.
 
 A Web version available through a galaxy instance should be available in late 2026.
 
@@ -28,19 +28,48 @@ Run the "chmod" command to make them executable:
 
 Basic usage
 -----------
-Initial setup. Uncompress the CRISPRTarget repository, place your target databases in fasta format a subdirectory named DB, and your spacer file in the top level directory, or subdirectory (e.g sample_crispr_gff). 
+Initial setup. 
 
- csh run_setup_db.sh
-
- This may take several hours as the download to DB from zenodo of the phage and plasmid files is slow and use ~40Gb of disk.
+git clone https://github.com/davidchyou/CRISPRTarget.git
+cd CRISPRTarget
+chmod -R 777 bin
 
 **Use case 1**
-A user generated a CRISPRDetect-formatted GFF file of CRISPR arrays using CRISPRDetect (e.g.PSA.crispr.gff), and a downloaded set genomic sequences to be used as DB (e.g. Genbank Phage or RefSeq Plasmid or IMGVR5, see instructions for specific databases below). CRISPRTarget will search for the CRISPR-spacer target and compute P-value using the shuffled BLASTDB. The user can then save the genomic and the shuffled BLASTDBs and index files for later use.
+Quick setup and test with a tiny target db
+Builds tiny shuffled control database and tests
 
-        perl CRISPRTarget.pl -gff sample_crispr_gff/PSA.crispr.gff -user_fasta DB/phage.fa -ctrl_db USER_SHUFFLE_DB/phage.fa -keep_user_db -evalue 0.1 -out phage_out -pam_search_all
+sh MakeUserDB.sh sample_db/test_target_4.fna USER_DB
+sh MakeUserShuffledDB.sh sample_db/test_target_4.fna USER_SHUFFLED_DB
+
+perl CRISPRTarget.pl -gff sample_crispr_gff/NC_002737.crispr.gff -db USER_DB/test_target_4.fna -ctrl_db USER_SHUFFLED_DB/test_target_4.fna -dbsize 100000000 -evalue 1 -out test_out -pam_search_all
+
+The test_out directory should contain the files in sample_out
+
+**Use case 2**
+Download a small test database vhdb and the larger Phage and Plasmid fna from Zenodo, shuffle and test with array.
+
+csh run_setup_db.sh
+
+This may take several hours as the download to DB from zenodo of the phage and plasmid files is slow. It will use ~40Gb of disk.
+
+A user generated a CRISPRDetect-formatted GFF file of CRISPR arrays using CRISPRDetect (e.g.PSA.crispr.gff), and a downloaded set genomic sequences to be used as DB (e.g. Genbank Phage or RefSeq Plasmid). CRISPRTarget will search for the CRISPR-spacer target and compute P-value using the shuffled BLASTDB. The user can then save the genomic and the shuffled BLASTDBs and index files for later use.
+
+perl CRISPRTarget.pl -gff sample_crispr_gff/PSA.crispr.gff -user_fasta DB/phage.fa -ctrl_db USER_SHUFFLE_DB/phage.fa -keep_user_db -evalue 0.1 -out phage_out -pam_search_all
 
 
-The shuffled BLASTB and index file need not to be derived from the same BLASTDB to be queried. Because the shuffled BLASTB and index file serve as the background for p-value calculation, it has to be large and should cover a diverse range of organism and nucleotide composition.
+The shuffled BLASTDB and index file do not need be derived from the same BLASTDB to be queried. However, because the shuffled BLASTDB and index file serve as the background for p-value calculation, it has to be large and should cover a similarly diverse range of sequences and nucleotide composition. e.g. this would be faster but the statistics less robust.
+
+perl CRISPRTarget.pl -gff sample_crispr_gff/PSA.crispr.gff -user_fasta DB/phage.fa -ctrl_db USER_SHUFFLE_DB/all_vhdb_full.fna -keep_user_db -evalue 0.1 -out phage_out -pam_search_all
+
+**Use case 3**
+This downloads and installs the MetaVR a large and diverse database. The download and installation may takes several hours and use ~500Gb) of disk.
+
+wget https://portal.nersc.gov/cfs/m342/METAVR/METAVR.fna.bgz
+mv METAVR.fna.bgz  METAVR.fna.gz
+gunzip METAVR.fna.gz
+sh MakeUserDB.sh METAVR.fna USER_DB
+perl CRISPRTarget.pl -gff sample_crispr_gff/PSA.crispr.gff -user_fasta USER_DB/METAVIR.fna -ctrl_db USER_SHUFFLE_DB/phage.fa -keep_user_db -evalue 0.1 -out phage_out -pam_search_all
+
 
 **Common options**
 
@@ -56,7 +85,7 @@ The shuffled BLASTB and index file need not to be derived from the same BLASTDB 
 
 -ctrl_db                 Uses the specified control DB (e.g. -ctrl_db USER_SHUFFLE_DB/phage.fa)
 
--use_default_control_db          Uses the standard shuffled control DB 
+-use_default_control_db          Uses the standard shuffled control DB (phage.fa if it exists)
 
 Output
 ------
@@ -79,14 +108,9 @@ To use a later version of plasmid or phage (each updated every 2 months by NCBI)
 **Plasmid** (plasmid.fa): Download RefSeq Plasmid (https://ftp.ncbi.nlm.nih.gov/refseq/release/plasmid/plasmid.*.genomic.fna.gz), cat into one fasta file
 **Phage** (phage.fa). Download Genbank Phage in gbk format (https://ftp.ncbi.nlm.nih.gov/genbank/) cat and convert to a fasta file.
 
-For the older IMGVR, download and uncompress the IMGVR5 file IMGVR5_UViG.fna. (https://genome.jgi.doe.gov/portal/IMG_VR/IMG_VR.home.html)
+**IMGVR** If you wish to use the legacy IMGVR (superceded by MetaVR), download and uncompress the IMGVR5 file IMGVR5_UViG.fna. (https://genome.jgi.doe.gov/portal/IMG_VR/IMG_VR.home.html)
 
-**MetaVR**, it can be obtained directly by wget. However, these are very large 71Gb compressed, 250 Gb uncompressed with the blast DB requires ~500Gb of disk.
-
-wget https://portal.nersc.gov/cfs/m342/METAVR/METAVR.fna.bgz
-mv METAVR.fna.bgz  METAVR.fna.gz
-gunzip METAVR.fna.gz
-
+**MetaVR** can be obtained directly by wget. However, these are very large 71Gb compressed, 250 Gb uncompressed with the blast DB requires ~500Gb of disk.
 Alternative download and more information on MetaVR (https://www.meta-virome.org/Downloads)
 
 Future work
