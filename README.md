@@ -74,7 +74,7 @@ gunzip METAVR.fna.gz
 
 sh MakeUserDB.sh METAVR.fna USER_DB
 
-perl CRISPRTarget.pl -gff sample_crispr_gff/PSA.crispr.gff -user_fasta USER_DB/METAVIR.fna -ctrl_db USER_SHUFFLE_DB/phage.fa -keep_user_db -evalue 0.1 -out phage_out -pam_search_all
+perl CRISPRTarget.pl -gff sample_crispr_gff/PSA.crispr.gff -user_fasta USER_DB/METAVR.fna -ctrl_db USER_SHUFFLE_DB/phage.fa -keep_user_db -evalue 0.1 -out phage_out -pam_search_all
 
 
 **Common options**
