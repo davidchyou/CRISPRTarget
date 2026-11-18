@@ -1,0 +1,381 @@
+# CRISPR target predictions in CRISPRTarget layout (text)
+# Prediction data: test_out/main/BLASTN/input_array_report.pam.txt
+
+1. Match to:  CP174156.1 Bacillus subtilis strain G01 plasmid pG01, complete sequence (CP174156.1) position: 5517-5546, with NC_002737 NC_002737_2_6|861185_861215, Strand: +, Direct Repeat: GTTTTAGAGCTATGCTGTTTTGAATGGTCCCAAAAC, Type[cctyper]: Unknown
+5' CCCAAAACUUCAGCACACUGAGACUUGUUGAGUUCCAUGUUUUAGA 3' <- CRISPR spacer RNA
+       ||| ||  |   |    || |||||||||| ||| |    | 
+3' ATAGTTTTAAACCCATTCTAACTTAACAACTCAAAGTAAATTCACA 5' <- Protospacer Sequence
+   ||||||||                              ||||||||
+5' TATCAAAATTTGGGTAAGATTGAATTGTTGAGTTTCATTTAAGTGT 3' <- []
+Score: 8 
+//
+
+2. Match to:  NC_000866.4 Enterobacteria phage T4, complete genome (NC_000866.4) position: 110121-110154, with NC_002737 NC_002737_1_2|1283599_1283633, Strand: -, Direct Repeat: GTCTCACCCTTCATGGGTGAGTGGATTGAAA, Type[cctyper]: Unknown
+5' GAUUGAAAUAAGUCAUUUUCUGCUUCUGCUAGGUUUGCUUUAGUCUCACC 3' <- CRISPR spacer RNA
+      | | |||  |||||||||| || || |  || ||||||         
+3' GGTAATATATGTAGTAAAAGACTAACACAAAACACACGAAAGTTTTACTT 5' <- Protospacer Sequence
+   ||||||||                                  ||||||||
+5' CCATTATATACATCATTTTCTGATTGTGTTTTGTGTGCTTTCAAAATGAA 3' <- []
+Score: 16 
+//
+
+3. Match to:  NC_000866.4 Enterobacteria phage T4, complete genome (NC_000866.4) position: 61668-61701, with NC_002737 NC_002737_1_2|1283599_1283633, Strand: +, Direct Repeat: GTCTCACCCTTCATGGGTGAGTGGATTGAAA, Type[cctyper]: Unknown
+5' GAUUGAAAUAAGUCAUUUUCUGCUUCUGCUAGGUUUGCUUUAGUCUCACC 3' <- CRISPR spacer RNA
+       ||   |  |||||||||||||||||       | |  |   |   |
+3' TATCCTAATTAAAGTAAAAGACGAAGACGCAGTCGTCTATGTAGTATATG 5' <- Protospacer Sequence
+   ||||||||                                  ||||||||
+5' ATAGGATTAATTTCATTTTCTGCTTCTGCGTCAGCAGATACATCATATAC 3' <- []
+Score: 8 
+//
+
+4. Match to:  NC_000866.4 Enterobacteria phage T4, complete genome (NC_000866.4) position: 30786-30819, with NC_002737 NC_002737_1_2|1283599_1283633, Strand: -, Direct Repeat: GTCTCACCCTTCATGGGTGAGTGGATTGAAA, Type[cctyper]: Unknown
+5' GAUUGAAAUAAGUCAUUUUCUGCUUCUGCUAGGUUUGCUUUAGUCUCACC 3' <- CRISPR spacer RNA
+     || ||| || ||||||||||||| | ||      |  | ||   |   
+3' TAAAGTTTTTTAAGTAAAAGACGAAAAAGAAATTTTCTTAGTCGTCGCCT 5' <- Protospacer Sequence
+   ||||||||                                  ||||||||
+5' ATTTCAAAAAATTCATTTTCTGCTTTTTCTTTAAAAGAATCAGCAGCGGA 3' <- []
+Score: 8 
+//
+
+5. Match to:  NC_000866.4 Enterobacteria phage T4, complete genome (NC_000866.4) position: 73449-73482, with NC_002737 NC_002737_1_2|1283599_1283633, Strand: +, Direct Repeat: GTCTCACCCTTCATGGGTGAGTGGATTGAAA, Type[cctyper]: Unknown
+5' GAUUGAAAUAAGUCAUUUUCUGCUUCUGCUAGGUUUGCUUUAGUCUCACC 3' <- CRISPR spacer RNA
+    ||     ||   || ||||||||||||||     |  || | | |    
+3' TTACAACGATAACGTTAAAGACGAAGACGAAAATCAAAAAGTTACAAACA 5' <- Protospacer Sequence
+   ||||||||                                  ||||||||
+5' AATGTTGCTATTGCAATTTCTGCTTCTGCTTTTAGTTTTTCAATGTTTGT 3' <- []
+Score: 10 
+//
+
+6. Match to:  NC_000866.4 Enterobacteria phage T4, complete genome (NC_000866.4) position: 159004-159037, with NC_002737 NC_002737_1_2|1283599_1283633, Strand: -, Direct Repeat: GTCTCACCCTTCATGGGTGAGTGGATTGAAA, Type[cctyper]: Unknown
+5' GAUUGAAAUAAGUCAUUUUCUGCUUCUGCUAGGUUUGCUUUAGUCUCACC 3' <- CRISPR spacer RNA
+     |        |     ||| | | ||||| | ||||||||  |   |  
+3' TAAGGAACCGGCTCACTAAGTCAAGGACGACCTAAACGAAACTACCTTCC 5' <- Protospacer Sequence
+   ||||||||                                  ||||||||
+5' ATTCCTTGGCCGAGTGATTCAGTTCCTGCTGGATTTGCTTTGATGGAAGG 3' <- []
+Score: 6 
+//
+
+7. Match to:  NC_000866.4 Enterobacteria phage T4, complete genome (NC_000866.4) position: 13623-13656, with NC_002737 NC_002737_1_2|1283599_1283633, Strand: +, Direct Repeat: GTCTCACCCTTCATGGGTGAGTGGATTGAAA, Type[cctyper]: Unknown
+5' GAUUGAAAUAAGUCAUUUUCUGCUUCUGCUAGGUUUGCUUUAGUCUCACC 3' <- CRISPR spacer RNA
+    ||  | ||    |||||||| ||||||     ||  || |         
+3' TTATGTCTAAGTGGTAAAAGAAGAAGACTTCGAAATTGATAATTTCCGAT 5' <- Protospacer Sequence
+   ||||||||                                  ||||||||
+5' AATACAGATTCACCATTTTCTTCTTCTGAAGCTTTAACTATTAAAGGCTA 3' <- []
+Score: 6 
+//
+
+8. Match to:  NC_000866.4 Enterobacteria phage T4, complete genome (NC_000866.4) position: 23774-23807, with NC_002737 NC_002737_1_2|1283599_1283633, Strand: -, Direct Repeat: GTCTCACCCTTCATGGGTGAGTGGATTGAAA, Type[cctyper]: Unknown
+5' GAUUGAAAUAAGUCAUUUUCUGCUUCUGCUAGGUUUGCUUUAGUCUCACC 3' <- CRISPR spacer RNA
+      |        | |      ||||||  | | ||||||||||| ||  |
+3' GGTATACCTAATAATTCGTTTCGAAGAAAAGCAAAACGAAATCAAAGAAG 5' <- Protospacer Sequence
+   ||||||||                                  ||||||||
+5' CCATATGGATTATTAAGCAAAGCTTCTTTTCGTTTTGCTTTAGTTTCTTC 3' <- []
+Score: 4 
+//
+
+9. Match to:  NC_000866.4 Enterobacteria phage T4, complete genome (NC_000866.4) position: 60379-60412, with NC_002737 NC_002737_1_2|1283599_1283633, Strand: -, Direct Repeat: GTCTCACCCTTCATGGGTGAGTGGATTGAAA, Type[cctyper]: Unknown
+5' GAUUGAAAUAAGUCAUUUUCUGCUUCUGCUAGGUUUGCUUUAGUCUCACC 3' <- CRISPR spacer RNA
+    ||     ||| |||||||| ||||   | |    |  |      ||   
+3' ATACAAAGATTTAGTAAAAGTCGAAATAGCTATCTAAAATGATTAAGCAT 5' <- Protospacer Sequence
+   ||||||||                                  ||||||||
+5' TATGTTTCTAAATCATTTTCAGCTTTATCGATAGATTTTACTAATTCGTA 3' <- []
+Score: 4 
+//
+
+10. Match to:  NC_000866.4 Enterobacteria phage T4, complete genome (NC_000866.4) position: 88954-88987, with NC_002737 NC_002737_1_2|1283599_1283633, Strand: -, Direct Repeat: GTCTCACCCTTCATGGGTGAGTGGATTGAAA, Type[cctyper]: Unknown
+5' GAUUGAAAUAAGUCAUUUUCUGCUUCUGCUAGGUUUGCUUUAGUCUCACC 3' <- CRISPR spacer RNA
+        |   |   |||||||||||| ||      || |   ||   |   
+3' TACTTTAGTTAAGGTAAAAGACGAAAACCTAATTAAGGTCCTCTTGGATA 5' <- Protospacer Sequence
+   ||||||||                                  ||||||||
+5' ATGAAATCAATTCCATTTTCTGCTTTTGGATTAATTCCAGGAGAACCTAT 3' <- []
+Score: 4 
+//
+
+11. Match to:  NC_000866.4 Enterobacteria phage T4, complete genome (NC_000866.4) position: 108879-108912, with NC_002737 NC_002737_1_2|1283599_1283633, Strand: -, Direct Repeat: GTCTCACCCTTCATGGGTGAGTGGATTGAAA, Type[cctyper]: Unknown
+5' GAUUGAAAUAAGUCAUUUUCUGCUUCUGCUAGGUUUGCUUUAGUCUCACC 3' <- CRISPR spacer RNA
+     |   |  || |  || || ||||||| ||| |   ||||||  | |  
+3' TAAGGGTGGTTAAACAATAGTCGAAGACTATCGAGTTGAAATCGAAATTA 5' <- Protospacer Sequence
+   ||||||||                                  ||||||||
+5' ATTCCCACCAATTTGTTATCAGCTTCTGATAGCTCAACTTTAGCTTTAAT 3' <- []
+Score: 12 
+//
+
+12. Match to:  CP174156.1 Bacillus subtilis strain G01 plasmid pG01, complete sequence (CP174156.1) position: 15954-15987, with NC_002737 NC_002737_1_2|1283599_1283633, Strand: +, Direct Repeat: GTCTCACCCTTCATGGGTGAGTGGATTGAAA, Type[cctyper]: Unknown
+5' GAUUGAAAUAAGUCAUUUUCUGCUUCUGCUAGGUUUGCUUUAGUCUCACC 3' <- CRISPR spacer RNA
+   |       |  |    |||||||||||  | |||||       |      
+3' CCCGAAAGACCCTCGGAAAGACGAAGAAAACCCAAATTCTCCGACGAAAT 5' <- Protospacer Sequence
+   ||||||||                                  ||||||||
+5' GGGCTTTCTGGGAGCCTTTCTGCTTCTTTTGGGTTTAAGAGGCTGCTTTA 3' <- []
+Score: 4 
+//
+
+13. Match to:  CP174156.1 Bacillus subtilis strain G01 plasmid pG01, complete sequence (CP174156.1) position: 47691-47724, with NC_002737 NC_002737_1_2|1283599_1283633, Strand: +, Direct Repeat: GTCTCACCCTTCATGGGTGAGTGGATTGAAA, Type[cctyper]: Unknown
+5' GAUUGAAAUAAGUCAUUUUCUGCUUCUGCUAGGUUUGCUUUAGUCUCACC 3' <- CRISPR spacer RNA
+     || |  |  |   ||||||||||| |||   |||       |    | 
+3' TAAAATAAACCCTAAAAAAGACGAAGTCGAAAAAAATATGTCTACTTAGT 5' <- Protospacer Sequence
+   ||||||||                                  ||||||||
+5' ATTTTATTTGGGATTTTTTCTGCTTCAGCTTTTTTTATACAGATGAATCA 3' <- []
+Score: 4 
+//
+
+14. Match to:  CP174156.1 Bacillus subtilis strain G01 plasmid pG01, complete sequence (CP174156.1) position: 56762-56795, with NC_002737 NC_002737_1_2|1283599_1283633, Strand: +, Direct Repeat: GTCTCACCCTTCATGGGTGAGTGGATTGAAA, Type[cctyper]: Unknown
+5' GAUUGAAAUAAGUCAUUUUCUGCUUCUGCUAGGUUUGCUUUAGUCUCACC 3' <- CRISPR spacer RNA
+   |||  |  ||| ||||| | |||||||   |  | |  ||   |  |   
+3' CTACGTCAATTGAGTAATATACGAAGATTTTTTATATTAATGAACCGACT 5' <- Protospacer Sequence
+   ||||||||                                  ||||||||
+5' GATGCAGTTAACTCATTATATGCTTCTAAAAAATATAATTACTTGGCTGA 3' <- []
+Score: 8 
+//
+
+15. Match to:  CP174156.1 Bacillus subtilis strain G01 plasmid pG01, complete sequence (CP174156.1) position: 31676-31710, with NC_002737 NC_002737_1_1|1283533_1283568, Strand: -, Direct Repeat: GTCTCACCCTTCATGGGTGAGTGGATTGAAA, Type[cctyper]: Unknown
+5' GAUUGAAAUUUUUUACUUUGAUUACAUCCCGCAAUGUCACAGCGUCUCACC 3' <- CRISPR spacer RNA
+      ||    | ||| ||||| ||| ||   |||||||||   |        
+3' AAGACAAGTAGAAAGGAAACGAATTTACATCGTTACAGTAATGATTGAAAA 5' <- Protospacer Sequence
+   ||||||||                                   ||||||||
+5' TTCTGTTCATCTTTCCTTTGCTTAAATGTAGCAATGTCATTACTAACTTTT 3' <- []
+Score: 13 
+//
+
+16. Match to:  MK448957.1 Streptococcus phage Javan484, complete genome (MK448957.1) position: 6328-6362, with NC_002737 NC_002737_1_1|1283533_1283568, Strand: -, Direct Repeat: GTCTCACCCTTCATGGGTGAGTGGATTGAAA, Type[cctyper]: Unknown
+5' GAUUGAAAUUUUUUACUUUGAUUACAUCCCGCAAUGUCACAGCGUCUCACC 3' <- CRISPR spacer RNA
+   |    |  |   ||  ||||||||  | |||||| | || |       |  
+3' CATTATCCACGTAAGTAAACTAATTCAAGGCGTTGCTGTTTAAGTTGATTA 5' <- Protospacer Sequence
+   ||||||||                                   ||||||||
+5' GTAATAGGTGCATTCATTTGATTAAGTTCCGCAACGACAAATTCAACTAAT 3' <- []
+Score: 9 
+//
+
+17. Match to:  NC_000866.4 Enterobacteria phage T4, complete genome (NC_000866.4) position: 34788-34822, with NC_002737 NC_002737_1_1|1283533_1283568, Strand: -, Direct Repeat: GTCTCACCCTTCATGGGTGAGTGGATTGAAA, Type[cctyper]: Unknown
+5' GAUUGAAAUUUUUUACUUUGAUUACAUCCCGCAAUGUCACAGCGUCUCACC 3' <- CRISPR spacer RNA
+     || |    ||   ||||  ||||||| || |||| |  | |      ||
+3' ACAAATAATTAACTGGAAAGAAATGTAGCGCTTTACCGAATGGTTTTTCGG 5' <- Protospacer Sequence
+   ||||||||                                   ||||||||
+5' TGTTTATTAATTGACCTTTCTTTACATCGCGAAATGGCTTACCAAAAAGCC 3' <- []
+Score: 9 
+//
+
+18. Match to:  JX495043.1 Pseudomonas phage JBD67, partial genome (JX495043.1) position: 13885-13914, with NC_002737 NC_002737_2_1|860855_860885, Strand: +, Direct Repeat: GTTTTAGAGCTATGCTGTTTTGAATGGTCCCAAAAC, Type[cctyper]: Unknown
+5' CCCAAAACUGCGCUGGUUGAUUUCUUCUUGCGCUUUUUGUUUUAGA 3' <- CRISPR spacer RNA
+     |       | ||||||| |||||||  ||||    || |  |  
+3' TTGCGCGACGGTGACCAACCAAAGAAGGGCGCGCCGGACGAGCTAC 5' <- Protospacer Sequence
+   ||||||||                              ||||||||
+5' AACGCGCTGCCACTGGTTGGTTTCTTCCCGCGCGGCCTGCTCGATG 3' <- []
+Score: 10 
+//
+
+19. Match to:  CP174156.1 Bacillus subtilis strain G01 plasmid pG01, complete sequence (CP174156.1) position: 40578-40607, with NC_002737 NC_002737_2_1|860855_860885, Strand: -, Direct Repeat: GTTTTAGAGCTATGCTGTTTTGAATGGTCCCAAAAC, Type[cctyper]: Unknown
+5' CCCAAAACUGCGCUGGUUGAUUUCUUCUUGCGCUUUUUGUUUUAGA 3' <- CRISPR spacer RNA
+    |   |    || |  |   |||||||||  ||||||||  ||   
+3' AGCAGTAAGAGCTATAATAAAAAGAAGAAATCGAAAAACTTAAGAA 5' <- Protospacer Sequence
+   ||||||||                              ||||||||
+5' TCGTCATTCTCGATATTATTTTTCTTCTTTAGCTTTTTGAATTCTT 3' <- []
+Score: 10 
+//
+
+20. Match to:  CP174156.1 Bacillus subtilis strain G01 plasmid pG01, complete sequence (CP174156.1) position: 52002-52031, with NC_002737 NC_002737_2_1|860855_860885, Strand: -, Direct Repeat: GTTTTAGAGCTATGCTGTTTTGAATGGTCCCAAAAC, Type[cctyper]: Unknown
+5' CCCAAAACUGCGCUGGUUGAUUUCUUCUUGCGCUUUUUGUUUUAGA 3' <- CRISPR spacer RNA
+          ||||| || ||||||||||             |      
+3' TTTAACAGACGCCACGAACTAAAGAATCTACGACGTTGTAGGTATC 5' <- Protospacer Sequence
+   ||||||||                              ||||||||
+5' AAATTGTCTGCGGTGCTTGATTTCTTAGATGCTGCAACATCCATAG 3' <- []
+Score: 2 
+//
+
+21. Match to:  NC_000866.4 Enterobacteria phage T4, complete genome (NC_000866.4) position: 104298-104327, with NC_002737 NC_002737_2_1|860855_860885, Strand: +, Direct Repeat: GTTTTAGAGCTATGCTGTTTTGAATGGTCCCAAAAC, Type[cctyper]: Unknown
+5' CCCAAAACUGCGCUGGUUGAUUUCUUCUUGCGCUUUUUGUUUUAGA 3' <- CRISPR spacer RNA
+     |     |    |  |  | ||||||||  |||||||     |  
+3' AAGAAGAAATAAAAAAAGATGAAGAAGAAGACGAAAAAGTCGTTAA 5' <- Protospacer Sequence
+   ||||||||                              ||||||||
+5' TTCTTCTTTATTTTTTTCTACTTCTTCTTCTGCTTTTTCAGCAATT 3' <- []
+Score: 8 
+//
+
+22. Match to:  NC_000866.4 Enterobacteria phage T4, complete genome (NC_000866.4) position: 5931-5960, with NC_002737 NC_002737_2_1|860855_860885, Strand: -, Direct Repeat: GTTTTAGAGCTATGCTGTTTTGAATGGTCCCAAAAC, Type[cctyper]: Unknown
+5' CCCAAAACUGCGCUGGUUGAUUUCUUCUUGCGCUUUUUGUUUUAGA 3' <- CRISPR spacer RNA
+           ||   |  |  |||| ||||||| |||| | ||   | 
+3' CTTAAGACACTTTAGAAGATAAACAAGAACGAGAAAGAGAAGGACG 5' <- Protospacer Sequence
+   ||||||||                              ||||||||
+5' GAATTCTGTGAAATCTTCTATTTGTTCTTGCTCTTTCTCTTCCTGC 3' <- []
+Score: 10 
+//
+
+23. Match to:  NC_000866.4 Enterobacteria phage T4, complete genome (NC_000866.4) position: 84229-84258, with NC_002737 NC_002737_2_3|860987_861017, Strand: -, Direct Repeat: GTTTTAGAGCTATGCTGTTTTGAATGGTCCCAAAAC, Type[cctyper]: Unknown
+5' CCCAAAACAGGAAUAUCCGCAAUAAUUAAUUGCGCUCUGUUUUAGA 3' <- CRISPR spacer RNA
+    | ||  |  ||| |||   ||||||| ||| ||||         |
+3' CGATTAGGATCTTGTAGTTTTTATTAACTAAGGCGACTATTTCCTT 5' <- Protospacer Sequence
+   ||||||||                              ||||||||
+5' GCTAATCCTAGAACATCAAAAATAATTGATTCCGCTGATAAAGGAA 3' <- []
+Score: 10 
+//
+
+24. Match to:  NC_000866.4 Enterobacteria phage T4, complete genome (NC_000866.4) position: 13509-13538, with NC_002737 NC_002737_2_3|860987_861017, Strand: -, Direct Repeat: GTTTTAGAGCTATGCTGTTTTGAATGGTCCCAAAAC, Type[cctyper]: Unknown
+5' CCCAAAACAGGAAUAUCCGCAAUAAUUAAUUGCGCUCUGUUUUAGA 3' <- CRISPR spacer RNA
+      | | |   ||||||  ||||||| |||      || ||  |  
+3' AAATATAGAAATTATAGAAGTTATTACTTACAAAATGAAAATCTTC 5' <- Protospacer Sequence
+   ||||||||                              ||||||||
+5' TTTATATCTTTAATATCTTCAATAATGAATGTTTTACTTTTAGAAG 3' <- []
+Score: 6 
+//
+
+25. Match to:  NC_000866.4 Enterobacteria phage T4, complete genome (NC_000866.4) position: 125220-125249, with NC_002737 NC_002737_2_3|860987_861017, Strand: -, Direct Repeat: GTTTTAGAGCTATGCTGTTTTGAATGGTCCCAAAAC, Type[cctyper]: Unknown
+5' CCCAAAACAGGAAUAUCCGCAAUAAUUAAUUGCGCUCUGUUUUAGA 3' <- CRISPR spacer RNA
+     ||  | |     |   |  ||||||||||| |||  |    |||
+3' TTGTCATTTTTGACTTAACTATATTAATTAACCCGAACCTGGTTCT 5' <- Protospacer Sequence
+   ||||||||                              ||||||||
+5' AACAGTAAAAACTGAATTGATATAATTAATTGGGCTTGGACCAAGA 3' <- []
+Score: 4 
+//
+
+26. Match to:  MK448957.1 Streptococcus phage Javan484, complete genome (MK448957.1) position: 28312-28341, with NC_002737 NC_002737_2_3|860987_861017, Strand: +, Direct Repeat: GTTTTAGAGCTATGCTGTTTTGAATGGTCCCAAAAC, Type[cctyper]: Unknown
+5' CCCAAAACAGGAAUAUCCGCAAUAAUUAAUUGCGCUCUGUUUUAGA 3' <- CRISPR spacer RNA
+    |     |    |||  ||||||||| || |||  |    |   | 
+3' AGAGGACGGGAGTATGAGCGTTATTAGTTTACGAAAACATATTCCG 5' <- Protospacer Sequence
+   ||||||||                              ||||||||
+5' TCTCCTGCCCTCATACTCGCAATAATCAAATGCTTTTGTATAAGGC 3' <- []
+Score: 6 
+//
+
+27. Match to:  NC_000866.4 Enterobacteria phage T4, complete genome (NC_000866.4) position: 125750-125785, with NC_002737 NC_002737_1_3|1283664_1283700, Strand: -, Direct Repeat: GTCTCACCCTTCATGGGTGAGTGGATTGAAA, Type[cctyper]: Unknown
+5' GAUUGAAAUAAAAAGCAUAUCACGAAAAUCACCAAUUACAUCAGGUCUCACC 3' <- CRISPR spacer RNA
+     || | | |  |   |  ||| |||||||||||| ||||||          
+3' GAAAGTATCTGGTCAATGGAGTACTTTTAGTGGTTTATGTAGAAGCTTACAT 5' <- Protospacer Sequence
+   ||||||||                                    ||||||||
+5' CTTTCATAGACCAGTTACCTCATGAAAATCACCAAATACATCTTCGAATGTA 3' <- []
+Score: 12 
+//
+
+28. Match to:  NC_000866.4 Enterobacteria phage T4, complete genome (NC_000866.4) position: 92760-92795, with NC_002737 NC_002737_1_3|1283664_1283700, Strand: +, Direct Repeat: GTCTCACCCTTCATGGGTGAGTGGATTGAAA, Type[cctyper]: Unknown
+5' GAUUGAAAUAAAAAGCAUAUCACGAAAAUCACCAAUUACAUCAGGUCUCACC 3' <- CRISPR spacer RNA
+      |        ||||   ||||||| || ||||| | ||   |        
+3' ACCAAAGCCAGGTTCGAGAAGTGCTTCTAATGGTTGAAGTTACCAGTTTCTT 5' <- Protospacer Sequence
+   ||||||||                                    ||||||||
+5' TGGTTTCGGTCCAAGCTCTTCACGAAGATTACCAACTTCAATGGTCAAAGAA 3' <- []
+Score: 8 
+//
+
+29. Match to:  NC_000866.4 Enterobacteria phage T4, complete genome (NC_000866.4) position: 53255-53290, with NC_002737 NC_002737_1_3|1283664_1283700, Strand: -, Direct Repeat: GTCTCACCCTTCATGGGTGAGTGGATTGAAA, Type[cctyper]: Unknown
+5' GAUUGAAAUAAAAAGCAUAUCACGAAAAUCACCAAUUACAUCAGGUCUCACC 3' <- CRISPR spacer RNA
+     |  | ||||| | |||||||  ||| |||    ||  || |         
+3' TGATATGTATTTGTTGTATAGTTATTTAAGTTAGAAAATTAATAGTTGACAA 5' <- Protospacer Sequence
+   ||||||||                                    ||||||||
+5' ACTATACATAAACAACATATCAATAAATTCAATCTTTTAATTATCAACTGTT 3' <- []
+Score: 10 
+//
+
+30. Match to:  NC_000866.4 Enterobacteria phage T4, complete genome (NC_000866.4) position: 57357-57392, with NC_002737 NC_002737_1_3|1283664_1283700, Strand: -, Direct Repeat: GTCTCACCCTTCATGGGTGAGTGGATTGAAA, Type[cctyper]: Unknown
+5' GAUUGAAAUAAAAAGCAUAUCACGAAAAUCACCAAUUACAUCAGGUCUCACC 3' <- CRISPR spacer RNA
+     || |  |||  |        ||||||||| |||||  |  |      || 
+3' GAAATTACATTACTATACACTAGCTTTTAGTAGTTAAACTGCTTATCTATGA 5' <- Protospacer Sequence
+   ||||||||                                    ||||||||
+5' CTTTAATGTAATGATATGTGATCGAAAATCATCAATTTGACGAATAGATACT 3' <- []
+Score: 4 
+//
+
+31. Match to:  NC_000866.4 Enterobacteria phage T4, complete genome (NC_000866.4) position: 12916-12951, with NC_002737 NC_002737_1_3|1283664_1283700, Strand: +, Direct Repeat: GTCTCACCCTTCATGGGTGAGTGGATTGAAA, Type[cctyper]: Unknown
+5' GAUUGAAAUAAAAAGCAUAUCACGAAAAUCACCAAUUACAUCAGGUCUCACC 3' <- CRISPR spacer RNA
+   ||    | |||||||||| | || |||    |  || |  |      |    
+3' CTTTAGTAATTTTTCGTAAATTGATTTAGCGGAATAGTTAATATAGCACCAT 5' <- Protospacer Sequence
+   ||||||||                                    ||||||||
+5' GAAATCATTAAAAAGCATTTAACTAAATCGCCTTATCAATTATATCGTGGTA 3' <- []
+Score: 6 
+//
+
+32. Match to:  NC_000866.4 Enterobacteria phage T4, complete genome (NC_000866.4) position: 25053-25088, with NC_002737 NC_002737_1_3|1283664_1283700, Strand: +, Direct Repeat: GTCTCACCCTTCATGGGTGAGTGGATTGAAA, Type[cctyper]: Unknown
+5' GAUUGAAAUAAAAAGCAUAUCACGAAAAUCACCAAUUACAUCAGGUCUCACC 3' <- CRISPR spacer RNA
+   |        | ||    ||| |   ||||||||||||| |     |  |   
+3' CATGTGACTTCTTCTCGATAATTAATTTAGTGGTTAATTTCACTAAAGGGTT 5' <- Protospacer Sequence
+   ||||||||                                    ||||||||
+5' GTACACTGAAGAAGAGCTATTAATTAAATCACCAATTAAAGTGATTTCCCAA 3' <- []
+Score: 6 
+//
+
+33. Match to:  NC_000866.4 Enterobacteria phage T4, complete genome (NC_000866.4) position: 124509-124544, with NC_002737 NC_002737_1_3|1283664_1283700, Strand: +, Direct Repeat: GTCTCACCCTTCATGGGTGAGTGGATTGAAA, Type[cctyper]: Unknown
+5' GAUUGAAAUAAAAAGCAUAUCACGAAAAUCACCAAUUACAUCAGGUCUCACC 3' <- CRISPR spacer RNA
+    | | ||     |   | || |||||||  | | ||||| |||      |||
+3' TTTATTTCGAAATCTTTCTAATGCTTTTCTTAGATAATGAAGTTATTTTTGG 5' <- Protospacer Sequence
+   ||||||||                                    ||||||||
+5' AAATAAAGCTTTAGAAAGATTACGAAAAGAATCTATTACTTCAATAAAAACC 3' <- []
+Score: 6 
+//
+
+34. Match to:  MK448957.1 Streptococcus phage Javan484, complete genome (MK448957.1) position: 4471-4506, with NC_002737 NC_002737_1_3|1283664_1283700, Strand: -, Direct Repeat: GTCTCACCCTTCATGGGTGAGTGGATTGAAA, Type[cctyper]: Unknown
+5' GAUUGAAAUAAAAAGCAUAUCACGAAAAUCACCAAUUACAUCAGGUCUCACC 3' <- CRISPR spacer RNA
+      |   || ||      |||| | |||| | ||||||| ||     |  | 
+3' AGGAAAATAGTTCGTTAGTAGTTCATTTAATAGTTAATGAAGATTTCACGGA 5' <- Protospacer Sequence
+   ||||||||                                    ||||||||
+5' TCCTTTTATCAAGCAATCATCAAGTAAATTATCAATTACTTCTAAAGTGCCT 3' <- []
+Score: 8 
+//
+
+35. Match to:  CP174156.1 Bacillus subtilis strain G01 plasmid pG01, complete sequence (CP174156.1) position: 20714-20749, with NC_002737 NC_002737_1_3|1283664_1283700, Strand: +, Direct Repeat: GTCTCACCCTTCATGGGTGAGTGGATTGAAA, Type[cctyper]: Unknown
+5' GAUUGAAAUAAAAAGCAUAUCACGAAAAUCACCAAUUACAUCAGGUCUCACC 3' <- CRISPR spacer RNA
+    |    ||   ||| || |||| |||||||   ||     | |     |   
+3' GTTTAGTTTAATTTAGTCTAGTCCTTTTAGCAATTTTATCATTAGCAGGAAA 5' <- Protospacer Sequence
+   ||||||||                                    ||||||||
+5' CAAATCAAATTAAATCAGATCAGGAAAATCGTTAAAATAGTAATCGTCCTTT 3' <- []
+Score: 4 
+//
+
+36. Match to:  CP174156.1 Bacillus subtilis strain G01 plasmid pG01, complete sequence (CP174156.1) position: 39735-39764, with NC_002737 NC_002737_2_5|861119_861149, Strand: +, Direct Repeat: GTTTTAGAGCTATGCTGTTTTGAATGGTCCCAAAAC, Type[cctyper]: Unknown
+5' CCCAAAACUAAAUUUGUUUAGCAGGUAAACCGUGCUUUGUUUUAGA 3' <- CRISPR spacer RNA
+   | |     | |  | | ||||| |||||||||     |||| |   
+3' GCGGAAACAGTGTACCTAATCGGCCATTTGGCTGATTACAATACAG 5' <- Protospacer Sequence
+   ||||||||                              ||||||||
+5' CGCCTTTGTCACATGGATTAGCCGGTAAACCGACTAATGTTATGTC 3' <- []
+Score: 8 
+//
+
+37. Match to:  NC_000866.4 Enterobacteria phage T4, complete genome (NC_000866.4) position: 11829-11858, with NC_002737 NC_002737_2_5|861119_861149, Strand: +, Direct Repeat: GTTTTAGAGCTATGCTGTTTTGAATGGTCCCAAAAC, Type[cctyper]: Unknown
+5' CCCAAAACUAAAUUUGUUUAGCAGGUAAACCGUGCUUUGUUUUAGA 3' <- CRISPR spacer RNA
+           |||| |||||||  || ||||       |  | |   |
+3' TAAAAAGTATTTCAACAAATGTTCAATTTCATTTTTACAATATCAT 5' <- Protospacer Sequence
+   ||||||||                              ||||||||
+5' ATTTTTCATAAAGTTGTTTACAAGTTAAAGTAAAAATGTTATAGTA 3' <- []
+Score: 6 
+//
+
+38. Match to:  NC_000866.4 Enterobacteria phage T4, complete genome (NC_000866.4) position: 165580-165609, with NC_002737 NC_002737_2_5|861119_861149, Strand: +, Direct Repeat: GTTTTAGAGCTATGCTGTTTTGAATGGTCCCAAAAC, Type[cctyper]: Unknown
+5' CCCAAAACUAAAUUUGUUUAGCAGGUAAACCGUGCUUUGUUUUAGA 3' <- CRISPR spacer RNA
+      ||   |||||||||||  |||| | |        |  |||  |
+3' CTATTGAAATTTAAACAAAATGTCCGTATAATTACTCATTAAAGGT 5' <- Protospacer Sequence
+   ||||||||                              ||||||||
+5' GATAACTTTAAATTTGTTTTACAGGCATATTAATGAGTAATTTCCA 3' <- []
+Score: 6 
+//
+
+39. Match to:  MK448957.1 Streptococcus phage Javan484, complete genome (MK448957.1) position: 45212-45241, with NC_002737 NC_002737_2_2|860921_860951, Strand: -, Direct Repeat: GTTTTAGAGCTATGCTGTTTTGAATGGTCCCAAAAC, Type[cctyper]: Unknown
+5' CCCAAAACUUAUAUGAACAUAACUCAAUUUGUAAAAAAGUUUUAGA 3' <- CRISPR spacer RNA
+       ||| |||||||||||||||||||||||||||||||  |    
+3' CTTATTTCAATATACTTGTATTGAGTTAAACATTTTTTCCCATAAC 5' <- Protospacer Sequence
+   ||||||||                              ||||||||
+5' GAATAAAGTTATATGAACATAACTCAATTTGTAAAAAAGGGTATTG 3' <- []
+Score: 30 
+//
+
+40. Match to:  NC_000866.4 Enterobacteria phage T4, complete genome (NC_000866.4) position: 131611-131640, with NC_002737 NC_002737_2_2|860921_860951, Strand: -, Direct Repeat: GTTTTAGAGCTATGCTGTTTTGAATGGTCCCAAAAC, Type[cctyper]: Unknown
+5' CCCAAAACUUAUAUGAACAUAACUCAAUUUGUAAAAAAGUUUUAGA 3' <- CRISPR spacer RNA
+     |     |   || |||  || ||||||||| || |         
+3' TTGAAAGTATGGTAATTGCCTTTAGTTAAACAGTTATCTTTTTGGA 5' <- Protospacer Sequence
+   ||||||||                              ||||||||
+5' AACTTTCATACCATTAACGGAAATCAATTTGTCAATAGAAAAACCT 3' <- []
+Score: 10 
+//
+
+41. Match to:  NC_000866.4 Enterobacteria phage T4, complete genome (NC_000866.4) position: 2974-3003, with NC_002737 NC_002737_2_2|860921_860951, Strand: +, Direct Repeat: GTTTTAGAGCTATGCTGTTTTGAATGGTCCCAAAAC, Type[cctyper]: Unknown
+5' CCCAAAACUUAUAUGAACAUAACUCAAUUUGUAAAAAAGUUUUAGA 3' <- CRISPR spacer RNA
+      |   ||   | |   ||||   ||||||||||||    ||   
+3' TTTTCAAGATACTCCACATATTACTTTAAACATTTTTAACTAAGAA 5' <- Protospacer Sequence
+   ||||||||                              ||||||||
+5' AAAAGTTCTATGAGGTGTATAATGAAATTTGTAAAAATTGATTCTT 3' <- []
+Score: 8 
+//
+
+42. Match to:  MK448957.1 Streptococcus phage Javan484, complete genome (MK448957.1) position: 37618-37647, with NC_002737 NC_002737_2_4|861053_861083, Strand: +, Direct Repeat: GTTTTAGAGCTATGCTGTTTTGAATGGTCCCAAAAC, Type[cctyper]: Unknown
+5' CCCAAAACAGUGCCGAGGAAAAAUUAGGUGCGCUUGGCGUUUUAGA 3' <- CRISPR spacer RNA
+       |   || ||||| |||||||| || | | |||||        
+3' ATTATAATTCGCGGCTACTTTTTAACCCCCACCAACCGACTGCGTA 5' <- Protospacer Sequence
+   ||||||||                              ||||||||
+5' TAATATTAAGCGCCGATGAAAAATTGGGGGTGGTTGGCTGACGCAT 3' <- []
+Score: 18 
+//
+

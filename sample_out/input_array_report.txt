@@ -1,0 +1,12 @@
+# CRISPR target predictions in CRISPRTarget layout (text)
+# Prediction data: test_out/input_array_report.tab.txt
+
+1. Match to:  MK448957.1 Streptococcus phage Javan484, complete genome (MK448957.1) position: 45212-45241, with NC_002737 NC_002737_2_2|860921_860951, Strand: -, Direct Repeat: GTTTTAGAGCTATGCTGTTTTGAATGGTCCCAAAAC, Type[cctyper]: Unknown
+5' CCCAAAACUUAUAUGAACAUAACUCAAUUUGUAAAAAAGUUUUAGA 3' <- CRISPR spacer RNA
+       ||| |||||||||||||||||||||||||||||||  |    
+3' CTTATttcAATATACTTGTATTGAGTTAAACATTTTTTcccATAAC 5' <- Protospacer Sequence
+   ||||||||                              ||||||||
+5' GAATAAAGTTATATGAACATAACTCAATTTGTAAAAAAGGGTATTG 3' <- [http://www.ncbi.nlm.nih.gov/nuccore/MK448957.1?report=graph&v=45212:45241&c=339966&theme=Default&flip=false&select=null&content=1&color=0&label=1&geneModel=1&decor=0&layout=0&spacing=0&alncolor=on]
+Score: 30 (P-value: 0.0000), PAM found in reverse strands 5' Tag: II-B-CCN (CCC), PAM found in reverse strands 3' Tag: I-E-CAT,CTT,CCT,CTC (CTT)
+//
+

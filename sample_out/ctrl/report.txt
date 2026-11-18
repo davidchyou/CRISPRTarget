@@ -1,0 +1,318 @@
+# CRISPR target predictions in CRISPRTarget layout (text)
+# Prediction data: test_out/ctrl/BLASTN/input_array_report.pam.txt
+
+1. Match to:  N/A (SEQ_1|test_target_4.fna-shuffled-0) position: 5244-5273, with NC_002737 NC_002737_2_2|860921_860951, Strand: -, Direct Repeat: GTTTTAGAGCTATGCTGTTTTGAATGGTCCCAAAAC, Type[cctyper]: Unknown
+5' CCCAAAACUUAUAUGAACAUAACUCAAUUUGUAAAAAAGUUUUAGA 3' <- CRISPR spacer RNA
+      ||  | ||| ||||||||| ||| |||  || | | |   |  
+3' TCTTTCGGTATAAACTTGTATTTAGTCAAAATTTATGTTACGTTAC 5' <- Protospacer Sequence
+   ||||||||                              ||||||||
+5' AGAAAGCCATATTTGAACATAAATCAGTTTTAAATACAATGCAATG 3' <- []
+Score: 14 
+//
+
+2. Match to:  N/A (SEQ_1|test_target_4.fna-shuffled-0) position: 97216-97245, with NC_002737 NC_002737_2_2|860921_860951, Strand: -, Direct Repeat: GTTTTAGAGCTATGCTGTTTTGAATGGTCCCAAAAC, Type[cctyper]: Unknown
+5' CCCAAAACUUAUAUGAACAUAACUCAAUUUGUAAAAAAGUUUUAGA 3' <- CRISPR spacer RNA
+    |    | |    | |    |||| ||||||||| |||   |    
+3' TGTAAATTATATGAATGAATTTGAATTAAACATTCTTTTCCACAGC 5' <- Protospacer Sequence
+   ||||||||                              ||||||||
+5' ACATTTAATATACTTACTTAAACTTAATTTGTAAGAAAAGGTGTCG 3' <- []
+Score: 8 
+//
+
+3. Match to:  N/A (SEQ_1|test_target_4.fna-shuffled-0) position: 144627-144656, with NC_002737 NC_002737_2_2|860921_860951, Strand: +, Direct Repeat: GTTTTAGAGCTATGCTGTTTTGAATGGTCCCAAAAC, Type[cctyper]: Unknown
+5' CCCAAAACUUAUAUGAACAUAACUCAAUUUGUAAAAAAGUUUUAGA 3' <- CRISPR spacer RNA
+    |    | |    |  |   || || ||||||||||||   | |  
+3' TGTGAATAACACGATATCATTTCAGATAAACATTTTTTTTCACTTA 5' <- Protospacer Sequence
+   ||||||||                              ||||||||
+5' ACACTTATTGTGCTATAGTAAAGTCTATTTGTAAAAAAAAGTGAAT 3' <- []
+Score: 8 
+//
+
+4. Match to:  N/A (SEQ_3|test_target_4.fna-shuffled-3) position: 40267-40296, with NC_002737 NC_002737_2_2|860921_860951, Strand: -, Direct Repeat: GTTTTAGAGCTATGCTGTTTTGAATGGTCCCAAAAC, Type[cctyper]: Unknown
+5' CCCAAAACUUAUAUGAACAUAACUCAAUUUGUAAAAAAGUUUUAGA 3' <- CRISPR spacer RNA
+      || ||  ||| |||||||| |  |  |||||||      ||  
+3' TAATTATGGCTATTCTTGTATTTAAGTCTACATTTTCGAGGTATTG 5' <- Protospacer Sequence
+   ||||||||                              ||||||||
+5' ATTAATACCGATAAGAACATAAATTCAGATGTAAAAGCTCCATAAC 3' <- []
+Score: 10 
+//
+
+5. Match to:  N/A (SEQ_1|test_target_4.fna-shuffled-1) position: 129095-129124, with NC_002737 NC_002737_2_2|860921_860951, Strand: -, Direct Repeat: GTTTTAGAGCTATGCTGTTTTGAATGGTCCCAAAAC, Type[cctyper]: Unknown
+5' CCCAAAACUUAUAUGAACAUAACUCAAUUUGUAAAAAAGUUUUAGA 3' <- CRISPR spacer RNA
+    |    |||  |||   || | |||||||||||||      |||  
+3' TGTCCATGACAATAGAAGTTTCGAGTTAAACATTTAGAGTCAATAA 5' <- Protospacer Sequence
+   ||||||||                              ||||||||
+5' ACAGGTACTGTTATCTTCAAAGCTCAATTTGTAAATCTCAGTTATT 3' <- []
+Score: 10 
+//
+
+6. Match to:  N/A (SEQ_4|test_target_4.fna-shuffled-3) position: 19321-19350, with NC_002737 NC_002737_2_2|860921_860951, Strand: +, Direct Repeat: GTTTTAGAGCTATGCTGTTTTGAATGGTCCCAAAAC, Type[cctyper]: Unknown
+5' CCCAAAACUUAUAUGAACAUAACUCAAUUUGUAAAAAAGUUUUAGA 3' <- CRISPR spacer RNA
+            | |  ||| |  |||||||||||||   |||      
+3' AATACAAATAAAGGCTTCTGATGAGTTAAACATTAAATCACTTAAC 5' <- Protospacer Sequence
+   ||||||||                              ||||||||
+5' TTATGTTTATTTCCGAAGACTACTCAATTTGTAATTTAGTGAATTG 3' <- []
+Score: 10 
+//
+
+7. Match to:  N/A (SEQ_1|test_target_4.fna-shuffled-3) position: 124499-124528, with NC_002737 NC_002737_2_2|860921_860951, Strand: +, Direct Repeat: GTTTTAGAGCTATGCTGTTTTGAATGGTCCCAAAAC, Type[cctyper]: Unknown
+5' CCCAAAACUUAUAUGAACAUAACUCAAUUUGUAAAAAAGUUUUAGA 3' <- CRISPR spacer RNA
+     | |||  | |  || | ||| ||||||||| | |||        
+3' TAGGTTTTCAAAATCTAGGATTTAGTTAAACAATCTTTTGGCTAGA 5' <- Protospacer Sequence
+   ||||||||                              ||||||||
+5' ATCCAAAAGTTTTAGATCCTAAATCAATTTGTTAGAAAACCGATCT 3' <- []
+Score: 12 
+//
+
+8. Match to:  N/A (SEQ_3|test_target_4.fna-shuffled-3) position: 11283-11318, with NC_002737 NC_002737_1_3|1283664_1283700, Strand: +, Direct Repeat: GTCTCACCCTTCATGGGTGAGTGGATTGAAA, Type[cctyper]: Unknown
+5' GAUUGAAAUAAAAAGCAUAUCACGAAAAUCACCAAUUACAUCAGGUCUCACC 3' <- CRISPR spacer RNA
+    |   |  |    |   |    ||||||||||||| |||  |   |  ||| 
+3' ATGGTTGCAGAAATGAAAGTCCGCTTTTAGTGGTTGATGACGATGATTGTGA 5' <- Protospacer Sequence
+   ||||||||                                    ||||||||
+5' TACCAACGTCTTTACTTTCAGGCGAAAATCACCAACTACTGCTACTAACACT 3' <- []
+Score: 4 
+//
+
+9. Match to:  N/A (SEQ_1|test_target_4.fna-shuffled-3) position: 92277-92312, with NC_002737 NC_002737_1_3|1283664_1283700, Strand: +, Direct Repeat: GTCTCACCCTTCATGGGTGAGTGGATTGAAA, Type[cctyper]: Unknown
+5' GAUUGAAAUAAAAAGCAUAUCACGAAAAUCACCAAUUACAUCAGGUCUCACC 3' <- CRISPR spacer RNA
+         |||||  ||||||||||| |||| |  |      |   |  |||  
+3' ACTTTCTTATTGATCGTATAGTGCCTTTAATCATCTGACAATAACTTAGTCT 5' <- Protospacer Sequence
+   ||||||||                                    ||||||||
+5' TGAAAGAATAACTAGCATATCACGGAAATTAGTAGACTGTTATTGAATCAGA 3' <- []
+Score: 6 
+//
+
+10. Match to:  N/A (SEQ_1|test_target_4.fna-shuffled-3) position: 127011-127046, with NC_002737 NC_002737_1_3|1283664_1283700, Strand: +, Direct Repeat: GTCTCACCCTTCATGGGTGAGTGGATTGAAA, Type[cctyper]: Unknown
+5' GAUUGAAAUAAAAAGCAUAUCACGAAAAUCACCAAUUACAUCAGGUCUCACC 3' <- CRISPR spacer RNA
+    |||||     ||   || ||| ||||||  |  ||||||||    |    |
+3' TTAACTACTAATTGGATAAAGTACTTTTACGGACTAATGTAGATGCGGAACG 5' <- Protospacer Sequence
+   ||||||||                                    ||||||||
+5' AATTGATGATTAACCTATTTCATGAAAATGCCTGATTACATCTACGCCTTGC 3' <- []
+Score: 8 
+//
+
+11. Match to:  N/A (SEQ_1|test_target_4.fna-shuffled-2) position: 74839-74874, with NC_002737 NC_002737_1_3|1283664_1283700, Strand: -, Direct Repeat: GTCTCACCCTTCATGGGTGAGTGGATTGAAA, Type[cctyper]: Unknown
+5' GAUUGAAAUAAAAAGCAUAUCACGAAAAUCACCAAUUACAUCAGGUCUCACC 3' <- CRISPR spacer RNA
+    |    | ||   | |||     |||||||| |||||| || |     || |
+3' TTGGACTAATGACTAGTAATCCTCTTTTAGTAGTTAATATATTTGTATGTTG 5' <- Protospacer Sequence
+   ||||||||                                    ||||||||
+5' AACCTGATTACTGATCATTAGGAGAAAATCATCAATTATATAAACATACAAC 3' <- []
+Score: 10 
+//
+
+12. Match to:  N/A (SEQ_1|test_target_4.fna-shuffled-0) position: 22888-22923, with NC_002737 NC_002737_1_3|1283664_1283700, Strand: +, Direct Repeat: GTCTCACCCTTCATGGGTGAGTGGATTGAAA, Type[cctyper]: Unknown
+5' GAUUGAAAUAAAAAGCAUAUCACGAAAAUCACCAAUUACAUCAGGUCUCACC 3' <- CRISPR spacer RNA
+        | |   || | |||||  ||| ||||||| ||   | |  |   |  
+3' TATTTTCTGAGTTACATATAGATCTTATAGTGGTAAAGACACTTGACTTTAT 5' <- Protospacer Sequence
+   ||||||||                                    ||||||||
+5' ATAAAAGACTCAATGTATATCTAGAATATCACCATTTCTGTGAACTGAAATA 3' <- []
+Score: 8 
+//
+
+13. Match to:  N/A (SEQ_3|test_target_4.fna-shuffled-2) position: 36711-36740, with NC_002737 NC_002737_2_5|861119_861149, Strand: +, Direct Repeat: GTTTTAGAGCTATGCTGTTTTGAATGGTCCCAAAAC, Type[cctyper]: Unknown
+5' CCCAAAACUAAAUUUGUUUAGCAGGUAAACCGUGCUUUGUUUUAGA 3' <- CRISPR spacer RNA
+       ||| |   ||||||| |||||||||      |||  |  |  
+3' TACGTTTTAGAAAAACAAAGCGTCCATTTAAACTCAAATTACGTGA 5' <- Protospacer Sequence
+   ||||||||                              ||||||||
+5' ATGCAAAATCTTTTTGTTTCGCAGGTAAATTTGAGTTTAATGCACT 3' <- []
+Score: 10 
+//
+
+14. Match to:  N/A (SEQ_4|test_target_4.fna-shuffled-3) position: 13453-13482, with NC_002737 NC_002737_2_5|861119_861149, Strand: +, Direct Repeat: GTTTTAGAGCTATGCTGTTTTGAATGGTCCCAAAAC, Type[cctyper]: Unknown
+5' CCCAAAACUAAAUUUGUUUAGCAGGUAAACCGUGCUUUGUUUUAGA 3' <- CRISPR spacer RNA
+    ||    ||       ||||||| ||| ||||| ||    |  |  
+3' AGGAGAGGAAGACGTTAAATCGTACATATGGCAGGACGAGAGTTTC 5' <- Protospacer Sequence
+   ||||||||                              ||||||||
+5' TCCTCTCCTTCTGCAATTTAGCATGTATACCGTCCTGCTCTCAAAG 3' <- []
+Score: 6 
+//
+
+15. Match to:  N/A (SEQ_1|test_target_4.fna-shuffled-1) position: 91179-91208, with NC_002737 NC_002737_2_5|861119_861149, Strand: +, Direct Repeat: GTTTTAGAGCTATGCTGTTTTGAATGGTCCCAAAAC, Type[cctyper]: Unknown
+5' CCCAAAACUAAAUUUGUUUAGCAGGUAAACCGUGCUUUGUUUUAGA 3' <- CRISPR spacer RNA
+         | ||||||| ||| |||| ||| |    |        |  
+3' TTAAAATAATTTAAAGAAAGCGTCAATTAGCTTGGGGTTTTTTTAC 5' <- Protospacer Sequence
+   ||||||||                              ||||||||
+5' AATTTTATTAAATTTCTTTCGCAGTTAATCGAACCCCAAAAAAATG 3' <- []
+Score: 8 
+//
+
+16. Match to:  N/A (SEQ_4|test_target_4.fna-shuffled-2) position: 39146-39175, with NC_002737 NC_002737_2_5|861119_861149, Strand: -, Direct Repeat: GTTTTAGAGCTATGCTGTTTTGAATGGTCCCAAAAC, Type[cctyper]: Unknown
+5' CCCAAAACUAAAUUUGUUUAGCAGGUAAACCGUGCUUUGUUUUAGA 3' <- CRISPR spacer RNA
+             || ||||||| || ||||||  |       ||    
+3' TTCGGCATGCTTGAACAAATAGTTCATTTGTGAACGTTACAATGAG 5' <- Protospacer Sequence
+   ||||||||                              ||||||||
+5' AAGCCGTACGAACTTGTTTATCAAGTAAACACTTGCAATGTTACTC 3' <- []
+Score: 6 
+//
+
+17. Match to:  N/A (SEQ_3|test_target_4.fna-shuffled-3) position: 61829-61863, with NC_002737 NC_002737_1_1|1283533_1283568, Strand: +, Direct Repeat: GTCTCACCCTTCATGGGTGAGTGGATTGAAA, Type[cctyper]: Unknown
+5' GAUUGAAAUUUUUUACUUUGAUUACAUCCCGCAAUGUCACAGCGUCUCACC 3' <- CRISPR spacer RNA
+    |  |   |||||||||||||||          ||   | |      ||  
+3' GTGCCGGCAAAAAATGAAACTAAAAGTCTTTAATAACATATTATTATGTTC 5' <- Protospacer Sequence
+   ||||||||                                   ||||||||
+5' CACGGCCGTTTTTTACTTTGATTTTCAGAAATTATTGTATAATAATACAAG 3' <- []
+Score: 3 
+//
+
+18. Match to:  N/A (SEQ_1|test_target_4.fna-shuffled-3) position: 156274-156308, with NC_002737 NC_002737_1_1|1283533_1283568, Strand: +, Direct Repeat: GTCTCACCCTTCATGGGTGAGTGGATTGAAA, Type[cctyper]: Unknown
+5' GAUUGAAAUUUUUUACUUUGAUUACAUCCCGCAAUGUCACAGCGUCUCACC 3' <- CRISPR spacer RNA
+   |  |   ||| || | |||||||| || || | ||  |||| | |   |  
+3' CATAAACTAATAATTTAAACTAATATAAGGGGCTATTGTGTAGTACCATAT 5' <- Protospacer Sequence
+   ||||||||                                   ||||||||
+5' GTATTTGATTATTAAATTTGATTATATTCCCCGATAACACATCATGGTATA 3' <- []
+Score: 15 
+//
+
+19. Match to:  N/A (SEQ_1|test_target_4.fna-shuffled-3) position: 163965-163999, with NC_002737 NC_002737_1_1|1283533_1283568, Strand: -, Direct Repeat: GTCTCACCCTTCATGGGTGAGTGGATTGAAA, Type[cctyper]: Unknown
+5' GAUUGAAAUUUUUUACUUUGAUUACAUCCCGCAAUGUCACAGCGUCUCACC 3' <- CRISPR spacer RNA
+     |   | ||||||| |||||||| |   |     |  |            
+3' AAAGAATAAAAAAATAAAACTAATATGTAGGTGGGCTATCGGAAGACAATC 5' <- Protospacer Sequence
+   ||||||||                                   ||||||||
+5' TTTCTTATTTTTTTATTTTGATTATACATCCACCCGATAGCCTTCTGTTAG 3' <- []
+Score: 3 
+//
+
+20. Match to:  N/A (SEQ_1|test_target_4.fna-shuffled-2) position: 7886-7920, with NC_002737 NC_002737_1_1|1283533_1283568, Strand: -, Direct Repeat: GTCTCACCCTTCATGGGTGAGTGGATTGAAA, Type[cctyper]: Unknown
+5' GAUUGAAAUUUUUUACUUUGAUUACAUCCCGCAAUGUCACAGCGUCUCACC 3' <- CRISPR spacer RNA
+      | | |||| ||||||| |||||| ||  ||     |    |       
+3' TCTATTGTAAATAATGAAATTAATGTGGGTTGTATATCTTAATCCAGTCTT 5' <- Protospacer Sequence
+   ||||||||                                   ||||||||
+5' AGATAACATTTATTACTTTAATTACACCCAACATATAGAATTAGGTCAGAA 3' <- []
+Score: 7 
+//
+
+21. Match to:  N/A (SEQ_3|test_target_4.fna-shuffled-0) position: 2139-2173, with NC_002737 NC_002737_1_1|1283533_1283568, Strand: +, Direct Repeat: GTCTCACCCTTCATGGGTGAGTGGATTGAAA, Type[cctyper]: Unknown
+5' GAUUGAAAUUUUUUACUUUGAUUACAUCCCGCAAUGUCACAGCGUCUCACC 3' <- CRISPR spacer RNA
+   |  | ||||||| || || |   ||||||||||| | |  |       |  
+3' CAGAATTTAAAACATCAAGCCTCTGTAGGGCGTTGCCGCATTTTCTTTTCT 5' <- Protospacer Sequence
+   ||||||||                                   ||||||||
+5' GTCTTAAATTTTGTAGTTCGGAGACATCCCGCAACGGCGTAAAAGAAAAGA 3' <- []
+Score: 11 
+//
+
+22. Match to:  N/A (SEQ_1|test_target_4.fna-shuffled-0) position: 89119-89148, with NC_002737 NC_002737_2_4|861053_861083, Strand: -, Direct Repeat: GTTTTAGAGCTATGCTGTTTTGAATGGTCCCAAAAC, Type[cctyper]: Unknown
+5' CCCAAAACAGUGCCGAGGAAAAAUUAGGUGCGCUUGGCGUUUUAGA 3' <- CRISPR spacer RNA
+      ||        || ||||| |||||||| | |||  || |    
+3' CAATTAATAATAAGCGCCTTTCTAATCCACACTAACAACAGATAGC 5' <- Protospacer Sequence
+   ||||||||                              ||||||||
+5' GTTAATTATTATTCGCGGAAAGATTAGGTGTGATTGTTGTCTATCG 3' <- []
+Score: 8 
+//
+
+23. Match to:  N/A (SEQ_1|test_target_4.fna-shuffled-0) position: 46201-46230, with NC_002737 NC_002737_2_4|861053_861083, Strand: +, Direct Repeat: GTTTTAGAGCTATGCTGTTTTGAATGGTCCCAAAAC, Type[cctyper]: Unknown
+5' CCCAAAACAGUGCCGAGGAAAAAUUAGGUGCGCUUGGCGUUUUAGA 3' <- CRISPR spacer RNA
+    ||| ||   |   ||||||||||| ||||      |||      |
+3' AGGTGTTTGGATTACTCCTTTTTAAACCACTGTTTTCGCGGTTCGT 5' <- Protospacer Sequence
+   ||||||||                              ||||||||
+5' TCCACAAACCTAATGAGGAAAAATTTGGTGACAAAAGCGCCAAGCA 3' <- []
+Score: 6 
+//
+
+24. Match to:  N/A (SEQ_3|test_target_4.fna-shuffled-3) position: 38113-38142, with NC_002737 NC_002737_2_1|860855_860885, Strand: +, Direct Repeat: GTTTTAGAGCTATGCTGTTTTGAATGGTCCCAAAAC, Type[cctyper]: Unknown
+5' CCCAAAACUGCGCUGGUUGAUUUCUUCUUGCGCUUUUUGUUUUAGA 3' <- CRISPR spacer RNA
+       |     | ||  ||||||| ||||||| | || ||      |
+3' CTTATCATGAGAGAATAACTAAATAAGAACGTGTAATACCTCTCAT 5' <- Protospacer Sequence
+   ||||||||                              ||||||||
+5' GAATAGTACTCTCTTATTGATTTATTCTTGCACATTATGGAGAGTA 3' <- []
+Score: 12 
+//
+
+25. Match to:  N/A (SEQ_1|test_target_4.fna-shuffled-1) position: 165781-165810, with NC_002737 NC_002737_2_1|860855_860885, Strand: -, Direct Repeat: GTTTTAGAGCTATGCTGTTTTGAATGGTCCCAAAAC, Type[cctyper]: Unknown
+5' CCCAAAACUGCGCUGGUUGAUUUCUUCUUGCGCUUUUUGUUUUAGA 3' <- CRISPR spacer RNA
+   | |         | ||||||| ||||  ||  |||||| || | | 
+3' GAGACCGATAAAGCCCAACTAGAGAAACACAAGAAAAAAAAGAACG 5' <- Protospacer Sequence
+   ||||||||                              ||||||||
+5' CTCTGGCTATTTCGGGTTGATCTCTTTGTGTTCTTTTTTTTCTTGC 3' <- []
+Score: 10 
+//
+
+26. Match to:  N/A (SEQ_1|test_target_4.fna-shuffled-0) position: 128795-128824, with NC_002737 NC_002737_2_3|860987_861017, Strand: +, Direct Repeat: GTTTTAGAGCTATGCTGTTTTGAATGGTCCCAAAAC, Type[cctyper]: Unknown
+5' CCCAAAACAGGAAUAUCCGCAAUAAUUAAUUGCGCUCUGUUUUAGA 3' <- CRISPR spacer RNA
+         |    |||||| ||||||||||| |   |        || 
+3' TATACGTTAATTTATAGTCGTTATTAATTGAGTTGCTTTTTGTTCG 5' <- Protospacer Sequence
+   ||||||||                              ||||||||
+5' ATATGCAATTAAATATCAGCAATAATTAACTCAACGAAAAACAAGC 3' <- []
+Score: 8 
+//
+
+27. Match to:  N/A (SEQ_1|test_target_4.fna-shuffled-0) position: 34587-34616, with NC_002737 NC_002737_2_3|860987_861017, Strand: +, Direct Repeat: GTTTTAGAGCTATGCTGTTTTGAATGGTCCCAAAAC, Type[cctyper]: Unknown
+5' CCCAAAACAGGAAUAUCCGCAAUAAUUAAUUGCGCUCUGUUUUAGA 3' <- CRISPR spacer RNA
+   || | ||    |    |   |||||||||||| ||||  || |  |
+3' GGTTATTTCTGTGGACGAAATTATTAATTAACTCGAGTTAAGACTT 5' <- Protospacer Sequence
+   ||||||||                              ||||||||
+5' CCAATAAAGACACCTGCTTTAATAATTAATTGAGCTCAATTCTGAA 3' <- []
+Score: 6 
+//
+
+28. Match to:  N/A (SEQ_1|test_target_4.fna-shuffled-0) position: 3354-3383, with NC_002737 NC_002737_2_3|860987_861017, Strand: -, Direct Repeat: GTTTTAGAGCTATGCTGTTTTGAATGGTCCCAAAAC, Type[cctyper]: Unknown
+5' CCCAAAACAGGAAUAUCCGCAAUAAUUAAUUGCGCUCUGUUUUAGA 3' <- CRISPR spacer RNA
+         | |||| |||| ||||||||              ||| | 
+3' TTAAACTCTCCTCATAGACGTTATTAGAGTTGCATGTGATAAACCC 5' <- Protospacer Sequence
+   ||||||||                              ||||||||
+5' AATTTGAGAGGAGTATCTGCAATAATCTCAACGTACACTATTTGGG 3' <- []
+Score: 2 
+//
+
+29. Match to:  N/A (SEQ_1|test_target_4.fna-shuffled-0) position: 141254-141283, with NC_002737 NC_002737_2_3|860987_861017, Strand: -, Direct Repeat: GTTTTAGAGCTATGCTGTTTTGAATGGTCCCAAAAC, Type[cctyper]: Unknown
+5' CCCAAAACAGGAAUAUCCGCAAUAAUUAAUUGCGCUCUGUUUUAGA 3' <- CRISPR spacer RNA
+   |    |     || ||| |||||||||| ||     || ||    |
+3' GCTGGTCTAAATTCTAGACGTTATTAATGAATCGCTGAAAAGTAAT 5' <- Protospacer Sequence
+   ||||||||                              ||||||||
+5' CGACCAGATTTAAGATCTGCAATAATTACTTAGCGACTTTTCATTA 3' <- []
+Score: 8 
+//
+
+30. Match to:  N/A (SEQ_2|test_target_4.fna-shuffled-0) position: 25439-25468, with NC_002737 NC_002737_2_3|860987_861017, Strand: -, Direct Repeat: GTTTTAGAGCTATGCTGTTTTGAATGGTCCCAAAAC, Type[cctyper]: Unknown
+5' CCCAAAACAGGAAUAUCCGCAAUAAUUAAUUGCGCUCUGUUUUAGA 3' <- CRISPR spacer RNA
+     |       | |  |||||||||||| | ||||    |       
+3' ACGAGCACAACCTCGAGGCGTTATTAAGTGACGCTGACCGCGGCTA 5' <- Protospacer Sequence
+   ||||||||                              ||||||||
+5' TGCTCGTGTTGGAGCTCCGCAATAATTCACTGCGACTGGCGCCGAT 3' <- []
+Score: 8 
+//
+
+31. Match to:  N/A (SEQ_4|test_target_4.fna-shuffled-1) position: 14501-14530, with NC_002737 NC_002737_2_3|860987_861017, Strand: +, Direct Repeat: GTTTTAGAGCTATGCTGTTTTGAATGGTCCCAAAAC, Type[cctyper]: Unknown
+5' CCCAAAACAGGAAUAUCCGCAAUAAUUAAUUGCGCUCUGUUUUAGA 3' <- CRISPR spacer RNA
+     |  ||   || | |  | ||||| ||||||||||          
+3' TCGCGTTTGGCTGAAATCCTTTATTCATTAACGCGAATGGGCTAGA 5' <- Protospacer Sequence
+   ||||||||                              ||||||||
+5' AGCGCAAACCGACTTTAGGAAATAAGTAATTGCGCTTACCCGATCT 3' <- []
+Score: 10 
+//
+
+32. Match to:  N/A (SEQ_1|test_target_4.fna-shuffled-3) position: 51590-51619, with NC_002737 NC_002737_2_3|860987_861017, Strand: -, Direct Repeat: GTTTTAGAGCTATGCTGTTTTGAATGGTCCCAAAAC, Type[cctyper]: Unknown
+5' CCCAAAACAGGAAUAUCCGCAAUAAUUAAUUGCGCUCUGUUUUAGA 3' <- CRISPR spacer RNA
+      ||   |||  |||    |||| |||||||||||   |   | |
+3' CTTTTCCTTCCCGATACTAATTATAAATTAACGCGACGTAGTCTAT 5' <- Protospacer Sequence
+   ||||||||                              ||||||||
+5' GAAAAGGAAGGGCTATGATTAATATTTAATTGCGCTGCATCAGATA 3' <- []
+Score: 12 
+//
+
+33. Match to:  N/A (SEQ_1|test_target_4.fna-shuffled-1) position: 39142-39171, with NC_002737 NC_002737_2_3|860987_861017, Strand: -, Direct Repeat: GTTTTAGAGCTATGCTGTTTTGAATGGTCCCAAAAC, Type[cctyper]: Unknown
+5' CCCAAAACAGGAAUAUCCGCAAUAAUUAAUUGCGCUCUGUUUUAGA 3' <- CRISPR spacer RNA
+    |          ||    ||||||||||||||             |
+3' TGTCACCACTTATAGTACCGTTATTAATTAACTTTCTGACCTGAAT 5' <- Protospacer Sequence
+   ||||||||                              ||||||||
+5' ACAGTGGTGAATATCATGGCAATAATTAATTGAAAGACTGGACTTA 3' <- []
+Score: 2 
+//
+
+34. Match to:  N/A (SEQ_3|test_target_4.fna-shuffled-2) position: 30832-30865, with NC_002737 NC_002737_1_2|1283599_1283633, Strand: -, Direct Repeat: GTCTCACCCTTCATGGGTGAGTGGATTGAAA, Type[cctyper]: Unknown
+5' GAUUGAAAUAAGUCAUUUUCUGCUUCUGCUAGGUUUGCUUUAGUCUCACC 3' <- CRISPR spacer RNA
+     | |   ||         |||||||||  |||| | ||||||       
+3' ACACCGAGATGTTAGGGTCGACGAAGACACTCCATAGGAAATCTTTAACT 5' <- Protospacer Sequence
+   ||||||||                                  ||||||||
+5' TGTGGCTCTACAATCCCAGCTGCTTCTGTGAGGTATCCTTTAGAAATTGA 3' <- []
+Score: 8 
+//
+
+35. Match to:  N/A (SEQ_1|test_target_4.fna-shuffled-2) position: 139907-139940, with NC_002737 NC_002737_1_2|1283599_1283633, Strand: +, Direct Repeat: GTCTCACCCTTCATGGGTGAGTGGATTGAAA, Type[cctyper]: Unknown
+5' GAUUGAAAUAAGUCAUUUUCUGCUUCUGCUAGGUUUGCUUUAGUCUCACC 3' <- CRISPR spacer RNA
+     ||  | |  |||||||| ||  ||||| || ||   ||||    | | 
+3' TCAAAGTAACACAGTAAAATACTGAGACGTTCTAATATAAATTCTCGAGT 5' <- Protospacer Sequence
+   ||||||||                                  ||||||||
+5' AGTTTCATTGTGTCATTTTATGACTCTGCAAGATTATATTTAAGAGCTCA 3' <- []
+Score: 14 
+//
+
