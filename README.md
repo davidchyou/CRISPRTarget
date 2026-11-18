@@ -31,19 +31,21 @@ Basic usage
 Initial setup. 
 
 git clone https://github.com/davidchyou/CRISPRTarget.git
+
 cd CRISPRTarget
+
 chmod -R 777 bin
 
 **Use case 1**
-Quick setup and test with a tiny target db
-Builds tiny shuffled control database and tests
+Quick setup and test with a tiny target database.
+Builds tiny shuffled control database and tests CRISPRTarget
 
 sh MakeUserDB.sh sample_db/test_target_4.fna USER_DB
 sh MakeUserShuffledDB.sh sample_db/test_target_4.fna USER_SHUFFLED_DB
 
 perl CRISPRTarget.pl -gff sample_crispr_gff/NC_002737.crispr.gff -db USER_DB/test_target_4.fna -ctrl_db USER_SHUFFLED_DB/test_target_4.fna -dbsize 100000000 -evalue 1 -out test_out -pam_search_all
 
-The test_out directory should contain the files in sample_out
+The test_out directory should contain the files in sample_out, input_array_report.html are the key outputs. The results of the main and shuffled negative controls(ctrl) are also available.
 
 **Use case 2**
 Download a small test database vhdb and the larger Phage and Plasmid fna from Zenodo, shuffle and test with array.
