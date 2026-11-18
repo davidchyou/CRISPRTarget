@@ -67,9 +67,13 @@ perl CRISPRTarget.pl -gff sample_crispr_gff/PSA.crispr.gff -user_fasta DB/phage.
 This downloads and installs the MetaVR a large and diverse database. The download and installation may takes several hours and use ~500Gb) of disk.
 
 wget https://portal.nersc.gov/cfs/m342/METAVR/METAVR.fna.bgz
+
 mv METAVR.fna.bgz  METAVR.fna.gz
+
 gunzip METAVR.fna.gz
+
 sh MakeUserDB.sh METAVR.fna USER_DB
+
 perl CRISPRTarget.pl -gff sample_crispr_gff/PSA.crispr.gff -user_fasta USER_DB/METAVIR.fna -ctrl_db USER_SHUFFLE_DB/phage.fa -keep_user_db -evalue 0.1 -out phage_out -pam_search_all
 
 
